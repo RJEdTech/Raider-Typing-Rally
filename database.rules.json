@@ -1,0 +1,102 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "games": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.token.email_verified == true && auth.token.email.matches(/@regisjesuit\\.com$/) && (data.exists() ? data.child('owner').val() == auth.uid : newData.child('owner').val() == auth.uid)",
+        ".validate": "newData.hasChildren(['title', 'owner']) && newData.child('title').isString() && newData.child('title').val().length <= 60 && newData.child('owner').val() == auth.uid",
+        "levels": {
+          "$lid": {
+            "text": { ".validate": "newData.isString() && newData.val().length <= 30000" },
+            "name": { ".validate": "newData.isString() && newData.val().length <= 50" }
+          }
+        }
+      }
+    },
+
+    "teacherGames": {
+      "$uid": {
+        ".read": "auth != null && auth.uid == $uid",
+        ".write": "auth != null && auth.uid == $uid && auth.token.email_verified == true"
+      }
+    },
+
+    "roster": {
+      "$code": {
+        ".read": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        ".write": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        "$sid": {
+          ".write": "auth != null && root.child('games').child($code).child('open').val() == true && (!data.exists() || data.child('email').val() == newData.child('email').val())",
+          ".validate": "newData.child('email').isString() && newData.child('email').val().matches(/^[a-z0-9._%+-]+@(student\\.)?regisjesuit\\.com$/) && newData.child('name').isString() && newData.child('name').val().length <= 24"
+        }
+      }
+    },
+
+    "results": {
+      "$code": {
+        ".read": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        ".write": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        "$sid": {
+          ".read": "auth != null",
+          "$rid": {
+            ".write": "auth != null && !data.exists() && root.child('games').child($code).child('open').val() == true",
+            ".validate": "newData.hasChildren(['lid', 'wpm', 'acc', 'at', 'yr']) && newData.child('wpm').isNumber() && newData.child('wpm').val() >= 0 && newData.child('wpm').val() <= 250 && newData.child('acc').isNumber() && newData.child('acc').val() >= 0 && newData.child('acc').val() <= 100"
+          }
+        }
+      }
+    },
+
+    "best": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        "$lid": {
+          "$yr": {
+            "$sid": {
+              ".write": "auth != null && root.child('games').child($code).child('open').val() == true && (!data.exists() || newData.child('wpm').val() > data.child('wpm').val())",
+              ".validate": "newData.hasChildren(['name', 'wpm', 'acc', 'at']) && newData.child('wpm').isNumber() && newData.child('wpm').val() <= 250 && newData.child('name').isString() && newData.child('name').val().length <= 24"
+            }
+          }
+        }
+      }
+    },
+
+    "bestAll": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        "$lid": {
+          "$sid": {
+            ".write": "auth != null && root.child('games').child($code).child('open').val() == true && (!data.exists() || newData.child('wpm').val() > data.child('wpm').val())",
+            ".validate": "newData.hasChildren(['name', 'wpm', 'acc', 'at']) && newData.child('wpm').isNumber() && newData.child('wpm').val() <= 250 && newData.child('name').isString() && newData.child('name').val().length <= 24"
+          }
+        }
+      }
+    },
+
+    "live": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid"
+      }
+    },
+
+    "rooms": {
+      "$code": {
+        ".write": "auth != null && root.child('games').child($code).child('owner').val() == auth.uid",
+        "$rid": {
+          ".read": "auth != null",
+          "players": {
+            "$uid": {
+              ".write": "auth != null && auth.uid == $uid",
+              ".validate": "!newData.exists() || (newData.hasChildren(['name', 'p']) && newData.child('p').isNumber() && newData.child('name').isString() && newData.child('name').val().length <= 24)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

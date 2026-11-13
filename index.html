@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raider Typing Rally &mdash; typing races from your class&rsquo;s own words</title>
+<meta name="description" content="Teachers build typing races from their own word lists and paragraphs. Students join with a code, race classmates live or against their best runs, and climb section, yearly and all-time leaderboards.">
+<script>
+/* Light/dark follows the operating system setting. No in-page toggle by design. */
+(function(){
+  var mq = window.matchMedia("(prefers-color-scheme: dark)");
+  function apply(){ document.documentElement.setAttribute("data-theme", mq.matches ? "dark" : "light"); }
+  apply();
+  if (mq.addEventListener) mq.addEventListener("change", apply);
+  else if (mq.addListener) mq.addListener(apply);
+})();
+</script>
+<style>
+:root{
+  --red:#C11430;
+  --bg:#f6f6f7; --panel:#ffffff; --ink:#1b1c1f; --muted:#5d6068;
+  --line:rgba(128,128,128,.28); --soft:rgba(128,128,128,.07);
+  --good:#1a7f45; --goodbg:rgba(26,127,69,.12);
+  --bad:#c0261c;  --badbg:rgba(192,38,28,.15);
+  --warn:#8a5a00; --warnbg:rgba(196,140,0,.14);
+  --gold:#a8791a;
+  --sky1:#bfe0f7; --sky2:#e9f4fb; --mtn1:#8fa6bd; --mtn2:#6f879f; --snow:#ffffff;
+  --track:#3b3e46; --lane:#43464f; --laneme:#4f3b42;
+}
+:root[data-theme="dark"]{
+  --bg:#15161a; --panel:#1d1f24; --ink:#e9eaee; --muted:#a0a4ae;
+  --line:rgba(150,150,160,.26); --soft:rgba(160,160,175,.07);
+  --good:#5ed693; --goodbg:rgba(94,214,147,.14);
+  --bad:#ff7d72;  --badbg:rgba(255,125,114,.17);
+  --warn:#f0c04a; --warnbg:rgba(240,192,74,.14);
+  --gold:#e8b84b;
+  --sky1:#26334a; --sky2:#1c2433; --mtn1:#3d4a5c; --mtn2:#323d4d; --snow:#c9d3df;
+  --track:#2a2c32; --lane:#30333a; --laneme:#45303a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+.ctr{max-width:1100px;margin:0 auto;padding:0 20px}
+.site-header{display:flex;align-items:center;gap:14px;padding:22px 0 16px;flex-wrap:wrap}
+.rj-mark{height:40px;width:auto;display:block;flex-shrink:0}
+.site-header h1{font-size:1.32rem;margin:0;font-weight:700;letter-spacing:-.01em}
+.site-header .sub{font-size:15px;color:var(--muted);margin-top:2px}
+.hdr-txt{flex:1;min-width:210px}
+.hdr-link{font-size:15px;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:8px}
+.hdr-link:hover{border-color:var(--red);color:var(--ink)}
+a{color:var(--red)}
+h2{font-size:1.15rem;margin:0 0 10px;font-weight:700}
+h3{font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin:0 0 10px}
+p{margin:0 0 10px}
+.muted{color:var(--muted)} .small{font-size:15px} .tiny{font-size:14px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;margin:16px 0}
+button,.btn{font:inherit;font-weight:600;font-size:16px;padding:9px 15px;border-radius:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;display:inline-block;
+  transition:border-color .15s,background .15s,filter .15s}
+button:hover,.btn:hover{border-color:var(--red)}
+button.primary,.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+button.primary:hover,.btn.primary:hover{filter:brightness(1.08)}
+button.big{font-size:19px;padding:13px 24px;border-radius:10px}
+button.ghost{background:transparent}
+button.danger{color:var(--bad)}
+button:disabled{opacity:.45;cursor:default} button:disabled:hover{border-color:var(--line)}
+button.x{padding:2px 9px;font-size:14px;line-height:1.4}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grow{flex:1}
+input[type=text],input[type=email],input[type=password],input[type=number],select,textarea{
+  font:inherit;font-size:16px;padding:9px 11px;border-radius:8px;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--red);outline-offset:1px;border-color:transparent}
+textarea{min-height:150px;resize:vertical;line-height:1.45}
+label.f{display:block;font-weight:600;font-size:15px;margin:12px 0 5px}
+.hint{font-size:14px;color:var(--muted);margin-top:4px}
+.err{color:var(--bad);font-size:15px;font-weight:600;min-height:1.2em;margin-top:8px}
+.ok{color:var(--good);font-size:15px;font-weight:600}
+.code{font-family:"IBM Plex Mono","Cascadia Mono",Consolas,monospace;letter-spacing:.08em;font-weight:700}
+.demo-bar{background:var(--warnbg);border:1px solid var(--warn);border-radius:9px;padding:8px 14px;font-size:15px;margin:0 0 12px}
+
+/* tabs */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);flex-wrap:wrap;margin-top:8px}
+.tab{border:none;background:none;padding:10px 14px;font-size:16px;font-weight:650;color:var(--muted);cursor:pointer;
+  border-bottom:2px solid transparent;border-radius:0;margin-bottom:-1px}
+.tab:hover{color:var(--ink);border-color:var(--line)}
+.tab[aria-selected="true"]{color:var(--red);border-bottom-color:var(--red)}
+
+/* home */
+.hero{border-radius:14px;overflow:hidden;border:1px solid var(--line);margin:4px 0 18px}
+.split{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+@media (max-width:820px){.split{grid-template-columns:1fr}}
+.card-title{font-size:1.25rem;font-weight:750;margin:0 0 4px}
+.step{display:flex;gap:10px;align-items:flex-start;margin:10px 0}
+.step .n{flex:0 0 28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;
+  display:flex;align-items:center;justify-content:center;font-size:15px;margin-top:2px}
+.codebox{font-size:1.6rem;text-transform:uppercase;text-align:center}
+
+/* racer picker */
+.pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin-top:6px}
+.pick button{padding:6px 4px 4px;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:13px;font-weight:600;
+  background:var(--soft)}
+.pick button[aria-pressed="true"]{border-color:var(--red);background:rgba(193,20,48,.12);box-shadow:0 0 0 1px var(--red) inset}
+.pick .racer{width:64px;height:45px}
+.racer{display:block;overflow:visible}
+
+/* game hub */
+.gamehead{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:4px}
+.gamehead .t{font-size:1.4rem;font-weight:750;line-height:1.2}
+.me-chip{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:30px;padding:3px 12px 3px 4px;background:var(--panel)}
+.me-chip .racer{width:44px;height:31px}
+.levels{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:14px}
+.lvl{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.lvl .ln{font-size:1.08rem;font-weight:700}
+.lvl .lk{font-size:14px;color:var(--muted)}
+.lvl .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-size:13px;color:var(--muted);line-height:1.3}
+.lvl .stats b{font-size:1.3rem;display:block;line-height:1.15;color:var(--ink)}
+.lvl button{margin-top:auto}
+.live-banner{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:linear-gradient(90deg,var(--red),#8e0e22);color:#fff;
+  border-radius:12px;padding:14px 18px;margin:14px 0;animation:pulse 1.6s ease-in-out infinite}
+.live-banner .grow{font-size:1.1rem;font-weight:700}
+.live-banner button{background:#fff;color:var(--red);border-color:#fff}
+.live-banner.wait{animation:none;background:var(--soft);color:var(--ink);border:1px solid var(--line)}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(193,20,48,.45)}50%{box-shadow:0 0 0 8px rgba(193,20,48,0)}}
+
+/* track */
+.track{position:relative;background:var(--track);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.track .sky{height:54px;background:linear-gradient(var(--sky1),var(--sky2));position:relative}
+.track .sky svg{position:absolute;left:0;bottom:0;width:100%;height:54px}
+.lanes{position:relative;padding:4px 0 6px}
+.lane{position:relative;height:56px;background:var(--lane);border-bottom:2px dashed rgba(255,255,255,.22);margin:0}
+.lane:last-child{border-bottom:none}
+.lane.me{background:var(--laneme)}
+.lane .start{position:absolute;left:66px;top:0;bottom:0;width:3px;background:rgba(255,255,255,.55)}
+.lane .finish{position:absolute;right:0;top:0;bottom:0;width:16px;
+  background:repeating-conic-gradient(#fff 0 25%,#1b1b1b 0 50%) 0 0/8px 8px;opacity:.9}
+.lane .runner{position:absolute;top:4px;left:calc(4px + var(--p,0) * (100% - 92px));transition:left .35s linear;width:68px}
+.lane .runner .racer{width:64px;height:45px}
+.lane .lbl{position:absolute;left:100%;top:5px;padding-left:2px;white-space:nowrap;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.65);line-height:1.25}
+.lane .lbl.left{left:auto;right:100%;padding:0 4px 0 0;text-align:right}
+.lane .lbl .nm{font-size:13px;font-weight:650}
+.lane .lbl .wp{font-size:12px;opacity:.8;font-family:"IBM Plex Mono",Consolas,monospace}
+.lane .place{display:none;font-weight:800;font-size:13px;color:#fff;background:rgba(0,0,0,.5);border-radius:10px;padding:0 8px;margin-right:5px;text-shadow:none}
+.lane .place.on{display:inline-block}
+.lane .place.p1{background:#e2b23c;color:#1b1b1b}.lane .place.p2{background:#c3c8cf;color:#1b1b1b}.lane .place.p3{background:#c98a50;color:#fff}
+.lane.ghost .runner{opacity:.55}
+.track.compact .lane{height:34px}
+.track.compact .lane .runner{top:2px;width:42px;left:calc(4px + var(--p,0) * (100% - 66px))}
+.track.compact .lane .runner .racer{width:40px;height:28px}
+.track.compact .lane .lbl{top:8px}.track.compact .lane .lbl .nm{font-size:12px}.track.compact .lane .wp{display:none}
+.track.compact .lane .start{left:44px}
+
+.track.big .lane{height:72px}
+.track.big .lane .runner{width:90px;left:calc(4px + var(--p,0) * (100% - 116px))}
+.track.big .lane .runner .racer{width:86px;height:60px}
+.track.big .lane .lbl{top:8px}.track.big .lane .lbl .nm{font-size:17px}.track.big .lane .wp{font-size:14px}.track.big .lane .place{font-size:16px}
+.track.big .lane .start{left:90px}
+
+/* racer animation (only while moving) */
+.go .hop{animation:hop .5s ease-in-out infinite}
+.go .wheel{animation:spin .38s linear infinite;transform-box:fill-box;transform-origin:center}
+.go .legA{animation:legsw .36s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:50% 0}
+.go .legB{animation:legsw .36s ease-in-out infinite alternate-reverse;transform-box:fill-box;transform-origin:50% 0}
+.go .bob,.go .gallop{animation:bob .36s ease-in-out infinite alternate}
+.go .shake{animation:shake .16s linear infinite alternate}
+.go .flame{animation:flick .12s linear infinite alternate;transform-box:fill-box;transform-origin:100% 50%}
+.go .puff{animation:puff .7s linear infinite}.go .puff.p2{animation-delay:.35s}
+.go .spray{animation:flick .2s linear infinite alternate;transform-box:fill-box;transform-origin:100% 50%}
+.go .staff{animation:staff .72s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:50% 60%}
+.go .wag{animation:wag .25s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:100% 100%}
+.puff{opacity:0}
+@keyframes hop{0%,100%{transform:translateY(0)}45%{transform:translateY(-7px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes legsw{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-2.5px)}}
+@keyframes shake{from{transform:translateY(-.6px)}to{transform:translateY(.6px)}}
+@keyframes flick{from{transform:scaleX(.75)}to{transform:scaleX(1.15)}}
+@keyframes puff{0%{opacity:.85;transform:translate(0,0) scale(.7)}100%{opacity:0;transform:translate(-10px,-5px) scale(1.5)}}
+@keyframes staff{from{transform:rotate(-6deg)}to{transform:rotate(6deg)}}
+@keyframes wag{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}
+@media (prefers-reduced-motion:reduce){.go *{animation:none!important}.lane .runner{transition:none}}
+
+/* race screen */
+.racebar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:6px 0 12px}
+.racebar .t{font-size:1.2rem;font-weight:750}
+.countdown{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:5}
+.countdown .lights{display:flex;gap:14px;background:#17181b;padding:14px 20px;border-radius:40px;box-shadow:0 6px 24px rgba(0,0,0,.45)}
+.countdown .light{width:42px;height:42px;border-radius:50%;background:#3a3b40}
+.countdown .light.r{background:#ff3b30;box-shadow:0 0 16px #ff3b30}
+.countdown .light.y{background:#ffcc00;box-shadow:0 0 16px #ffcc00}
+.countdown .light.g{background:#34c759;box-shadow:0 0 18px #34c759}
+.countdown .msg{position:absolute;bottom:14px;font-size:1.5rem;font-weight:800;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.7)}
+.typebox{position:relative;margin-top:14px;background:var(--panel);border:2px solid var(--line);border-radius:12px;padding:16px 18px;
+  font-size:1.45rem;line-height:1.75;min-height:110px;cursor:text;word-wrap:break-word}
+.typebox.armed{border-color:var(--red)}
+.typebox .c{border-radius:3px}
+.typebox .c.done{color:var(--good)}
+.typebox .c.cur{background:var(--red);color:#fff}
+.typebox .c.cur.bad{background:var(--bad);color:#fff;animation:shk .18s}
+.typebox .w{white-space:nowrap}
+.typebox .w.curw{box-shadow:0 2px 0 var(--ink)}
+.typebox.locked{color:var(--muted);filter:blur(5px);user-select:none}
+.typebox .clickhint{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:17px;font-weight:700;
+  background:rgba(128,128,128,.14);border-radius:10px;color:var(--ink)}
+.typebox.needfocus .clickhint{display:flex}
+@keyframes shk{0%,100%{transform:translateX(0)}30%{transform:translateX(-2px)}70%{transform:translateX(2px)}}
+.hidin{position:absolute;opacity:0;left:0;top:0;width:1px;height:1px;border:0;padding:0}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.stat{flex:1;min-width:110px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 14px}
+.stat .v{font-size:1.6rem;font-weight:800;font-family:"IBM Plex Mono",Consolas,monospace;line-height:1.2}
+.stat .k{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.streak{color:var(--gold)}
+.toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:9px;
+  font-weight:650;z-index:50;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.on{opacity:1}
+
+/* results / podium */
+.podium{display:flex;align-items:flex-end;justify-content:center;gap:10px;margin:10px 0 4px}
+.pod{display:flex;flex-direction:column;align-items:center;width:150px}
+.pod .racer{width:72px;height:50px}
+.pod .nm{font-weight:700;font-size:15px;text-align:center;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pod .sp{font-size:14px;color:var(--muted)}
+.pod .blk{width:100%;border-radius:8px 8px 0 0;display:flex;align-items:flex-start;justify-content:center;font-size:1.6rem;font-weight:800;color:#1b1b1b;padding-top:6px}
+.pod.p1 .blk{height:96px;background:#e2b23c}.pod.p2 .blk{height:70px;background:#c3c8cf}.pod.p3 .blk{height:52px;background:#c98a50}
+.bigstat{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:12px 0}
+.bigstat .stat{flex:0 1 170px;text-align:center}
+.pb{display:inline-block;background:var(--goodbg);color:var(--good);border:1px solid var(--good);border-radius:20px;padding:3px 12px;font-weight:700}
+
+/* tables & boards */
+table.t{width:100%;border-collapse:collapse;font-size:15px}
+table.t th{text-align:left;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+table.t td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.t tr.me td{background:rgba(193,20,48,.09)}
+table.t td.num{font-family:"IBM Plex Mono",Consolas,monospace;font-weight:700}
+table.t .racer{width:40px;height:28px}
+.medal{display:inline-flex;width:26px;height:26px;border-radius:50%;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.medal.m1{background:#e2b23c;color:#1b1b1b}.medal.m2{background:#c3c8cf;color:#1b1b1b}.medal.m3{background:#c98a50;color:#fff}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
+.filters select{width:auto;min-width:160px}
+.empty{padding:22px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:10px}
+.spark{display:block}
+.tablewrap{overflow-x:auto}
+
+/* teacher */
+.gamelist{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+.gcard{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--panel);cursor:pointer;text-align:left;display:block;width:100%;font-weight:400}
+.gcard:hover{border-color:var(--red)}
+.gcard .gt{font-weight:700;font-size:1.08rem}
+.sharebox{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.sharebox .bigcode{font-size:2rem}
+.lvled{border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0;background:var(--panel)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.seg button{border:none;border-radius:0;padding:8px 14px;font-size:15px;background:var(--panel)}
+.seg button[aria-pressed="true"]{background:var(--red);color:#fff}
+.savestate{font-size:14px;color:var(--muted);min-width:80px}
+.switch{display:inline-flex;align-items:center;gap:8px;font-weight:600;cursor:pointer}
+.switch input{width:20px;height:20px;accent-color:var(--red)}
+
+/* host / projector */
+.hostcode{display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:center;text-align:center;padding:10px 0}
+.hostcode .bigcode{font-size:4.2rem;line-height:1;color:var(--red)}
+.hostcode .url{font-size:1.25rem;font-weight:650}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:30px;padding:2px 6px 2px 4px;background:var(--panel);font-weight:600;font-size:15px;animation:popin .3s}
+.chip .racer{width:40px;height:28px}
+@keyframes popin{from{transform:scale(.6);opacity:0}to{transform:scale(1);opacity:1}}
+.timer{font-family:"IBM Plex Mono",Consolas,monospace;font-weight:800;font-size:1.5rem}
+
+/* sample track on home */
+.loop .runner{animation:loopRun 7s linear infinite}
+.loop .lane:nth-child(2) .runner{animation-duration:8.6s}
+.loop .lane:nth-child(3) .runner{animation-duration:10.4s}
+@keyframes loopRun{from{left:4px}to{left:calc(100% - 88px)}}
+
+footer{font-size:14px;color:var(--muted);padding:26px 0 34px;border-top:1px solid var(--line);margin-top:40px}
+footer a{color:var(--muted)}
+.privacy{font-size:14px;color:var(--muted);line-height:1.5}
+canvas#confetti{position:fixed;inset:0;pointer-events:none;z-index:60}
+@media (max-width:600px){
+  .typebox{font-size:1.2rem}
+  .lane .lbl .wp{display:none}
+  .hostcode .bigcode{font-size:3rem}
+}
+@media print{.noprint{display:none!important}}
+
+</style>
+</head>
+<body>
+<div class="ctr">
+  <header class="rj-masthead site-header">
+    <img class="rj-mark" src="data:image/png;base64,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" alt="Regis Jesuit">
+    <div class="hdr-txt">
+      <h1><a href="#/" style="color:inherit;text-decoration:none">Raider Typing Rally</a></h1>
+      <div class="sub">Typing races built from your class&rsquo;s own words</div>
+    </div>
+    <a class="hdr-link noprint" href="#/teach">For teachers</a>
+  </header>
+  <div id="modeBar"></div>
+  <main id="app" aria-live="polite"></main>
+  <footer class="noprint">
+    <p class="privacy"><b>What this site saves:</b> your school email, first name and last initial, your racer, and your race scores, in RJ Ed Tech&rsquo;s race database (Google Firebase). Leaderboards show only first name and last initial. Only the teacher who made a game sees students&rsquo; emails. Anonymous page counts only.</p>
+    <a href="https://github.com/RJEdTech/Raider-Typing-Rally">View on GitHub</a> &middot;
+    <a href="https://forms.microsoft.com/r/sKU9sHY45r">Report a bug or request a tool</a>
+    <span class="rj-license" style="display:block;font-size:12px;opacity:.85;margin-top:6px">&copy; 2026 Jason Beyer, RJ Ed Tech &middot; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="license noopener" style="color:inherit">CC BY-NC 4.0</a>: free to share and adapt for non-commercial use, with credit. Idea by Paul Stearman.</span>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ==========================================================================
+   Raider Typing Rally  ·  Regis Jesuit Educational Technology
+   ========================================================================== */
+/* ---------- RACERS: original flat SVG art, facing right, viewBox 0 0 80 56 ----------
+   Animated parts carry classes the stylesheet moves only while racing (.go):
+   hop, wheel, legA/legB, bob, shake, flame, puff, spray, staff, wag              */
+var RACERS = [
+  {id:"frog", name:"Frog", svg:
+   '<g class="hop">'+
+   '<ellipse cx="22" cy="49" rx="9" ry="3.2" fill="#2c7f37"/>'+
+   '<path d="M26 38 q-14 0 -10 11 h10 z" fill="#2c7f37"/>'+
+   '<ellipse cx="42" cy="37" rx="22" ry="13" fill="#3fa34d"/>'+
+   '<ellipse cx="46" cy="42" rx="14" ry="6.5" fill="#cfe9ad"/>'+
+   '<path d="M55 44 l7 7 h-10 z" fill="#2c7f37"/>'+
+   '<circle cx="51" cy="24" r="7" fill="#3fa34d"/><circle cx="63" cy="26" r="7" fill="#3fa34d"/>'+
+   '<circle cx="52" cy="23" r="4.2" fill="#fff"/><circle cx="53.4" cy="23" r="2.1" fill="#111"/>'+
+   '<circle cx="64" cy="25" r="4.2" fill="#fff"/><circle cx="65.4" cy="25" r="2.1" fill="#111"/>'+
+   '<path d="M56 35 q7 5 12 -1" stroke="#1d5e27" stroke-width="2" fill="none" stroke-linecap="round"/>'+
+   '<circle cx="34" cy="31" r="2.2" fill="#2c7f37"/><circle cx="40" cy="27" r="1.6" fill="#2c7f37"/>'+
+   '</g>'},
+  {id:"car", name:"Race car", svg:
+   '<g class="puffs"><circle class="puff" cx="5" cy="37" r="3.2" fill="#b9bcc2"/><circle class="puff p2" cx="5" cy="37" r="2.4" fill="#cfd2d7"/></g>'+
+   '<g class="shake">'+
+   '<rect x="11" y="18" width="3" height="12" fill="#26272b"/><rect x="5" y="15" width="14" height="4" rx="1" fill="#26272b"/>'+
+   '<path d="M8 38 L12 28 L32 25 L40 17 L56 17 L62 25 L74 28 L77 38 Z" fill="#C11430"/>'+
+   '<path d="M43 23 h15 l-3 -5 h-9 z" fill="#a9dcff"/>'+
+   '<circle cx="49" cy="17" r="5" fill="#f2c94c"/><rect x="49" y="15.5" width="5" height="2.4" rx="1" fill="#26272b"/>'+
+   '<rect x="12" y="34" width="62" height="3" fill="#8e0e22"/>'+
+   '<circle cx="33" cy="31" r="5.6" fill="#fff"/><text x="33" y="34.2" font-size="8.5" text-anchor="middle" font-weight="700" font-family="Segoe UI,sans-serif" fill="#111">7</text>'+
+   '</g>'+
+   '<g class="wheel"><circle cx="21" cy="41" r="8" fill="#1b1b1d"/><circle cx="21" cy="41" r="3.6" fill="#c3c6cc"/><rect x="20" y="34" width="2" height="14" fill="#55575c"/></g>'+
+   '<g class="wheel"><circle cx="63" cy="41" r="8" fill="#1b1b1d"/><circle cx="63" cy="41" r="3.6" fill="#c3c6cc"/><rect x="62" y="34" width="2" height="14" fill="#55575c"/></g>'},
+  {id:"ignatius", name:"St. Ignatius", svg:
+   '<circle cx="46" cy="11" r="10" fill="none" stroke="#e2b23c" stroke-width="2" opacity=".9"/>'+
+   '<g class="bob">'+
+   '<g class="legA"><rect x="38" y="40" width="4.5" height="11" fill="#7a5233"/><rect x="37" y="50" width="8" height="2.6" rx="1" fill="#5b3a20"/></g>'+
+   '<g class="legB"><rect x="46" y="40" width="4.5" height="11" fill="#6a4529"/><rect x="45" y="50" width="8" height="2.6" rx="1" fill="#5b3a20"/></g>'+
+   '<path d="M37 22 h16 l6 23 h-28 z" fill="#1e1e24" stroke="rgba(255,255,255,.45)" stroke-width="1"/>'+
+   '<path d="M35 33 h22" stroke="#c9a46a" stroke-width="2"/>'+
+   '<circle cx="46" cy="15" r="7.2" fill="#e3b78f"/>'+
+   '<path d="M39.2 13.5 q.6 -5 4 -6.6" stroke="#3a2a1d" stroke-width="2.6" fill="none" stroke-linecap="round"/>'+
+   '<path d="M41 17 q5 9.5 11.2 0 q-1.6 7 -5.6 7 q-4 0 -5.6 -7 z" fill="#3a2a1d"/>'+
+   '<circle cx="49" cy="13.6" r="1.1" fill="#1d1d1d"/>'+
+   '<path d="M52.6 14 l2 2.4 h-2.2" stroke="#b8865f" stroke-width="1.1" fill="none"/>'+
+   '<g class="staff"><rect x="57" y="6" width="2.6" height="47" rx="1.2" fill="#8a5a2b"/><circle cx="58.3" cy="6" r="2.6" fill="#8a5a2b"/>'+
+   '<path d="M49 25 l8.5 7.5" stroke="#1e1e24" stroke-width="5.2" stroke-linecap="round"/><circle cx="58.4" cy="33" r="2.6" fill="#e3b78f"/></g>'+
+   '</g>'},
+  {id:"rocket", name:"Rocket", svg:
+   '<g class="flame"><path d="M15 28 L1 21 L6 28 L1 35 Z" fill="#ff8a1f"/><path d="M15 28 L6 24.5 L9 28 L6 31.5 Z" fill="#ffe14d"/></g>'+
+   '<g class="shake">'+
+   '<path d="M17 20 l-7 -10 h11 l9 10 z" fill="#C11430"/><path d="M17 36 l-7 10 h11 l9 -10 z" fill="#C11430"/>'+
+   '<path d="M14 19.5 h40 q16 0 23 8.5 q-7 8.5 -23 8.5 h-40 z" fill="#eef0f3" stroke="#9aa0a8" stroke-width="1.2"/>'+
+   '<path d="M62 20.6 q10 2 15 7.4 q-5 5.4 -15 7.4 z" fill="#C11430"/>'+
+   '<circle cx="46" cy="28" r="5.2" fill="#7cc4ff" stroke="#9aa0a8" stroke-width="2"/>'+
+   '<rect x="22" y="26.6" width="14" height="2.8" rx="1.4" fill="#c7cbd1"/>'+
+   '</g>'},
+  {id:"skier", name:"Skier", svg:
+   '<g class="spray"><circle cx="8" cy="46" r="3" fill="#dff1ff"/><circle cx="3" cy="42" r="2.2" fill="#cfe6fb"/><circle cx="12" cy="41" r="1.8" fill="#eaf6ff"/></g>'+
+   '<g class="bob">'+
+   '<path d="M12 49 L68 46 q6 -.5 8 -5" stroke="#C11430" stroke-width="3.2" fill="none" stroke-linecap="round"/>'+
+   '<path d="M36 47 l7 -10 l-9 -6" stroke="#25262b" stroke-width="5.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>'+
+   '<path d="M31 31 l14 -11 l7 6 l-13 11 z" fill="#1f6fd1"/>'+
+   '<circle cx="53" cy="17" r="5.8" fill="#e3b78f"/><path d="M47.2 16.4 a5.8 5.8 0 0 1 11.6 0 z" fill="#25262b"/>'+
+   '<rect x="54" y="16.4" width="5.6" height="3.2" rx="1.4" fill="#ffb000"/>'+
+   '<path d="M44 24 l11 6" stroke="#1f6fd1" stroke-width="4.2" stroke-linecap="round"/>'+
+   '<path d="M55 30 L27 47" stroke="#7d8189" stroke-width="1.6"/>'+
+   '</g>'},
+  {id:"bison", name:"Bison", svg:
+   '<g class="gallop">'+
+   '<g class="legA"><rect x="20" y="38" width="5" height="13" rx="1.5" fill="#3b2314"/><rect x="50" y="38" width="5" height="13" rx="1.5" fill="#3b2314"/></g>'+
+   '<g class="legB"><rect x="28" y="38" width="5" height="13" rx="1.5" fill="#2c190d"/><rect x="57" y="38" width="5" height="13" rx="1.5" fill="#2c190d"/></g>'+
+   '<path d="M15 26 q-7 2 -7 10" stroke="#3b2314" stroke-width="2.2" fill="none"/>'+
+   '<path d="M14 30 q2 -12 16 -12 q10 -8 22 -2 q8 2 10 10 l-2 14 h-44 q-4 -2 -2 -10 z" fill="#6b4226"/>'+
+   '<path d="M33 16 q11 -7 21 2 q4 6 3 15 q-12 -2 -24 -17 z" fill="#4a2c18"/>'+
+   '<path d="M57 22 q13 0 15 10 q0 9 -8 9.5 q-8 0 -10 -8.5 z" fill="#3b2314"/>'+
+   '<path d="M61 22.5 q1.5 -6.5 6.5 -6.8 q-2.4 2.4 -2.4 6.6 z" fill="#ece4d2"/>'+
+   '<circle cx="66" cy="29" r="1.4" fill="#fff"/>'+
+   '<path d="M61 39 q2 7 7 3.4 z" fill="#2c190d"/>'+
+   '</g>'},
+  {id:"cheetah", name:"Cheetah", svg:
+   '<g class="gallop">'+
+   '<g class="legA"><path d="M24 36 l-6 14" stroke="#d99c2f" stroke-width="4.5" stroke-linecap="round"/><path d="M52 36 l5 14" stroke="#d99c2f" stroke-width="4.5" stroke-linecap="round"/></g>'+
+   '<g class="legB"><path d="M30 36 l4 14" stroke="#c58a24" stroke-width="4.5" stroke-linecap="round"/><path d="M47 36 l-5 14" stroke="#c58a24" stroke-width="4.5" stroke-linecap="round"/></g>'+
+   '<path d="M16 30 q-10 -6 -12 6 q3 -4 7 -3" stroke="#e9b44c" stroke-width="3.2" fill="none" stroke-linecap="round"/>'+
+   '<ellipse cx="37" cy="31" rx="22" ry="8.5" fill="#e9b44c"/>'+
+   '<circle cx="63" cy="25" r="8" fill="#e9b44c"/><path d="M58 18.5 l1.6 -5 l3.6 4.4 z" fill="#d99c2f"/>'+
+   '<circle cx="66" cy="23.4" r="1.5" fill="#1d1d1d"/><path d="M66.4 25.2 q-1 5 -4 7" stroke="#3a2a1a" stroke-width="1.2" fill="none"/>'+
+   '<circle cx="70.6" cy="27" r="1.3" fill="#3a2a1a"/>'+
+   '<g fill="#3a2a1a"><circle cx="24" cy="29" r="1.6"/><circle cx="30" cy="33.5" r="1.5"/><circle cx="35" cy="27" r="1.6"/><circle cx="41" cy="33" r="1.5"/><circle cx="46" cy="27.5" r="1.6"/><circle cx="51" cy="32" r="1.4"/><circle cx="20" cy="34" r="1.3"/></g>'+
+   '</g>'},
+  {id:"snail", name:"Snail", svg:
+   '<rect x="0" y="48" width="34" height="3" rx="1.5" fill="#8fd0ff" opacity=".55"/>'+
+   '<g class="bob">'+
+   '<path d="M10 49 h52 q9 0 9 -6.5 q0 -8 -8 -8 q-5 0 -7 6 l-2 8.5 z" fill="#dcb68f"/>'+
+   '<path d="M63 35 l-3 -13 M68 35 l3 -13" stroke="#dcb68f" stroke-width="2.6" stroke-linecap="round"/>'+
+   '<circle cx="60" cy="21" r="2.5" fill="#dcb68f"/><circle cx="71" cy="21" r="2.5" fill="#dcb68f"/>'+
+   '<circle cx="60.4" cy="20.6" r="1.1" fill="#1d1d1d"/><circle cx="71.4" cy="20.6" r="1.1" fill="#1d1d1d"/>'+
+   '<path d="M65 42 q3 2.4 5.6 -.4" stroke="#8a6440" stroke-width="1.4" fill="none" stroke-linecap="round"/>'+
+   '<circle cx="34" cy="31" r="16" fill="#b8642e"/>'+
+   '<path d="M34 31 m-10 0 a10 10 0 1 1 10 10 a6 6 0 1 1 -6 -6 a3 3 0 1 1 3 3" stroke="#7a3e17" stroke-width="2.2" fill="none"/>'+
+   '</g>'},
+  {id:"bike", name:"Cyclist", svg:
+   '<g class="wheel"><circle cx="18" cy="40" r="11" stroke="#1b1b1d" stroke-width="3.4" fill="none"/><circle cx="18" cy="40" r="9.2" stroke="#b9bec6" stroke-width="1" fill="none"/><path d="M18 29 v22 M7 40 h22" stroke="#9aa0a8" stroke-width="1"/></g>'+
+   '<g class="wheel"><circle cx="62" cy="40" r="11" stroke="#1b1b1d" stroke-width="3.4" fill="none"/><circle cx="62" cy="40" r="9.2" stroke="#b9bec6" stroke-width="1" fill="none"/><path d="M62 29 v22 M51 40 h22" stroke="#9aa0a8" stroke-width="1"/></g>'+
+   '<path d="M18 40 L35 40 L50 25 L29 25 Z M35 40 L27 22 M50 25 L62 40 M47 21 h7" stroke="#C11430" stroke-width="2.8" fill="none" stroke-linejoin="round"/>'+
+   '<g class="bob">'+
+   '<path d="M28 21 L45 13" stroke="#1f6fd1" stroke-width="6.5" stroke-linecap="round"/>'+
+   '<circle cx="50" cy="10" r="5" fill="#e3b78f"/><path d="M44.6 9 a5.4 5.4 0 0 1 10.6 -1.6 z" fill="#C11430"/>'+
+   '<path d="M44 15 L51 22" stroke="#1f6fd1" stroke-width="3.4" stroke-linecap="round"/>'+
+   '<g class="legA"><path d="M29 22 L37 31 L34 40" stroke="#25262b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>'+
+   '</g>'},
+  {id:"dog", name:"Dog", svg:
+   '<g class="gallop">'+
+   '<g class="legA"><rect x="21" y="37" width="5" height="13" rx="2" fill="#c98f2f"/><rect x="50" y="37" width="5" height="13" rx="2" fill="#c98f2f"/></g>'+
+   '<g class="legB"><rect x="28" y="37" width="5" height="13" rx="2" fill="#b77f25"/><rect x="56" y="37" width="5" height="13" rx="2" fill="#b77f25"/></g>'+
+   '<g class="wag"><path d="M18 30 q-10 -4 -12 -12" stroke="#d9a441" stroke-width="4.5" fill="none" stroke-linecap="round"/></g>'+
+   '<ellipse cx="38" cy="32" rx="21" ry="9.5" fill="#d9a441"/>'+
+   '<path d="M55 26 q4 -11 14 -8 q8 3 7 10 q-1 5 -9 5 q-8 0 -12 -7 z" fill="#d9a441"/>'+
+   '<path d="M59 19 q-6 1 -6 11 q4 1 6 -3 z" fill="#b77f25"/>'+
+   '<circle cx="67" cy="22.4" r="1.6" fill="#1d1d1d"/><circle cx="75.6" cy="26" r="1.8" fill="#1d1d1d"/>'+
+   '<path d="M70 31.4 q1 5 4 3 l-.6 -3.6 z" fill="#ff7a8a"/>'+
+   '</g>'}
+];
+function racerById(id){ for(var i=0;i<RACERS.length;i++) if(RACERS[i].id===id) return RACERS[i]; return RACERS[0]; }
+function racerSVG(id, cls){
+  var r = racerById(id);
+  return '<svg class="racer '+(cls||'')+'" viewBox="0 0 80 56" aria-hidden="true" focusable="false">'+r.svg+'</svg>';
+}
+
+/* ==========================================================================
+   DATA LAYER — one tiny path API, two engines.
+   Demo engine: this browser's localStorage, synced across tabs with
+   BroadcastChannel (so a teacher tab and student tabs can race each other).
+   Live engine: Firebase Realtime Database + Firebase Auth (students sign in
+   anonymously; teachers use a verified @regisjesuit.com email + password).
+   API: get set update remove push on now  |  auth: see AUTH below
+   ========================================================================== */
+var FIREBASE_CONFIG = null; /*FIREBASE_CONFIG*/
+var FIREBASE_SDK = "13.3.0";
+
+var DB = null, AUTH = null;
+
+function rid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,8); }
+function clone(v){ return v==null ? null : JSON.parse(JSON.stringify(v)); }
+
+function makeDemo(){
+  /* One localStorage key per leaf path (like the real database writes each path
+     on its own), so two tabs writing at once never overwrite each other.
+     Other tabs hear about changes through the browser's "storage" event. */
+  var PRE = "rtr.d:", subs = [];
+  function parts(p){ return String(p).split("/").filter(Boolean); }
+  function norm(p){ var x = parts(p); return x.length ? "/"+x.join("/") : ""; }
+  function keysUnder(p){
+    var base = PRE + norm(p), out = [];
+    for(var i=0;i<localStorage.length;i++){ var k = localStorage.key(i); if(k===base || k.indexOf(base+"/")===0) out.push(k); }
+    return out;
+  }
+  function arrayify(o){
+    if(!o || typeof o!=="object") return o;
+    Object.keys(o).forEach(function(k){ o[k] = arrayify(o[k]); });
+    var ks = Object.keys(o);
+    if(ks.length && ks.every(function(k,i){ return String(i)===k; })) return ks.map(function(k){ return o[k]; });
+    return o;
+  }
+  function read(p){
+    var base = PRE + norm(p), ks = keysUnder(p);
+    if(!ks.length) return null;
+    if(ks.length===1 && ks[0]===base) return JSON.parse(localStorage.getItem(base));
+    var root = {};
+    ks.forEach(function(k){
+      if(k===base) return;
+      var rel = k.slice(base.length+1).split("/"), n = root;
+      for(var i=0;i<rel.length-1;i++){ if(typeof n[rel[i]]!=="object" || n[rel[i]]===null) n[rel[i]] = {}; n = n[rel[i]]; }
+      n[rel[rel.length-1]] = JSON.parse(localStorage.getItem(k));
+    });
+    return arrayify(root);
+  }
+  function write(p, v){
+    keysUnder(p).forEach(function(k){ localStorage.removeItem(k); });
+    var ps = parts(p); for(var i=1;i<ps.length;i++) localStorage.removeItem(PRE+"/"+ps.slice(0,i).join("/"));
+    (function put(path, val){
+      if(val===null || val===undefined) return;
+      if(typeof val==="object"){ Object.keys(val).forEach(function(k){ put(path+"/"+k, val[k]); }); return; }
+      localStorage.setItem(PRE+path, JSON.stringify(val));
+    })(norm(p), v);
+  }
+  function related(a,b){ a=norm(a); b=norm(b); return a===b || a.indexOf(b+"/")===0 || b.indexOf(a+"/")===0 || a==="" || b===""; }
+  var pending = [], flushT = null;
+  function notify(paths){
+    pending = pending.concat(paths);
+    if(flushT) return;
+    flushT = setTimeout(function(){
+      var ps = pending; pending = []; flushT = null;
+      subs.slice().forEach(function(s){
+        for(var i=0;i<ps.length;i++){ if(related(s.path, ps[i])){ try{ s.cb(read(s.path)); }catch(e){ console.error(e); } break; } }
+      });
+    }, 0);
+  }
+  window.addEventListener("storage", function(e){
+    if(e.key===null) return notify([""]);
+    if(e.key.indexOf(PRE)===0) notify([e.key.slice(PRE.length)]);
+  });
+  return {
+    mode: "demo",
+    get: function(p){ return Promise.resolve(read(p)); },
+    set: function(p, v){ write(p, clone(v)); notify([p]); return Promise.resolve(); },
+    update: function(p, o){ var ps=[]; Object.keys(o).forEach(function(k){ write(p+"/"+k, clone(o[k])); ps.push(p+"/"+k); }); notify(ps); return Promise.resolve(); },
+    remove: function(p){ write(p, null); notify([p]); return Promise.resolve(); },
+    push: function(p, v){ var k=rid(); write(p+"/"+k, clone(v)); notify([p+"/"+k]); return Promise.resolve(k); },
+    on: function(p, cb){ var s={path:p, cb:cb}; subs.push(s); setTimeout(function(){ if(subs.indexOf(s)>=0) cb(read(p)); }, 0);
+      return function(){ var i=subs.indexOf(s); if(i>=0) subs.splice(i,1); }; },
+    now: function(){ return Date.now(); },
+    reset: function(){ keysUnder("").forEach(function(k){ localStorage.removeItem(k); }); }
+  };
+}
+
+function makeDemoAuth(){
+  /* Teacher accounts live in this browser only; the session is per tab so one
+     browser can play teacher in one tab and students in others. */
+  var ACC = "rtr.demo.teachers", SES = "rtr.demo.session", listeners = [];
+  function accounts(){ try{ return JSON.parse(localStorage.getItem(ACC))||{}; }catch(e){ return {}; } }
+  function cur(){ try{ return JSON.parse(sessionStorage.getItem(SES)); }catch(e){ return null; } }
+  function fire(){ var u=cur(); listeners.forEach(function(f){ f(u); }); }
+  var studentUid = sessionStorage.getItem("rtr.demo.suid") || ("s_"+rid());
+  sessionStorage.setItem("rtr.demo.suid", studentUid);
+  return {
+    teacher: function(){ return cur(); },
+    onTeacher: function(f){ listeners.push(f); setTimeout(function(){ f(cur()); },0); },
+    signUp: function(email, pw, name){
+      var a=accounts(); email=email.toLowerCase();
+      if(a[email]) return Promise.reject(new Error("That email already has an account. Sign in instead."));
+      a[email]={pw:pw, name:name, uid:"t_"+rid()}; localStorage.setItem(ACC, JSON.stringify(a));
+      sessionStorage.setItem(SES, JSON.stringify({uid:a[email].uid, email:email, name:name, verified:true})); fire();
+      return Promise.resolve();
+    },
+    signIn: function(email, pw){
+      var a=accounts(); email=email.toLowerCase();
+      if(!a[email] || a[email].pw!==pw) return Promise.reject(new Error("That email and password don't match."));
+      sessionStorage.setItem(SES, JSON.stringify({uid:a[email].uid, email:email, name:a[email].name, verified:true})); fire();
+      return Promise.resolve();
+    },
+    signOut: function(){ sessionStorage.removeItem(SES); fire(); return Promise.resolve(); },
+    sendVerify: function(){ return Promise.resolve(); },
+    refresh: function(){ fire(); return Promise.resolve(cur()); },
+    resetPassword: function(){ return Promise.reject(new Error("Demo mode has no email. Make a new account instead.")); },
+    student: function(){ var t=cur(); return Promise.resolve(t ? t.uid : studentUid); }
+  };
+}
+
+function makeFirebase(cfg){
+  var base = "https://www.gstatic.com/firebasejs/"+FIREBASE_SDK+"/";
+  return Promise.all([import(base+"firebase-app.js"), import(base+"firebase-auth.js"), import(base+"firebase-database.js")])
+  .then(function(m){
+    var A=m[0], Au=m[1], D=m[2];
+    var app = A.initializeApp(cfg), auth = Au.getAuth(app), db = D.getDatabase(app);
+    if(cfg.emulator){ Au.connectAuthEmulator(auth, "http://127.0.0.1:9099", {disableWarnings:true}); D.connectDatabaseEmulator(db, "127.0.0.1", 9000); }
+    var offset = 0;
+    D.onValue(D.ref(db, ".info/serverTimeOffset"), function(s){ offset = s.val()||0; });
+    function R(p){ return D.ref(db, p); }
+    var api = {
+      mode: "live",
+      get: function(p){ return D.get(R(p)).then(function(s){ return s.val(); }); },
+      set: function(p,v){ return D.set(R(p), v); },
+      update: function(p,o){ return D.update(R(p), o); },
+      remove: function(p){ return D.remove(R(p)); },
+      push: function(p,v){ var r=D.push(R(p)); return D.set(r,v).then(function(){ return r.key; }); },
+      on: function(p, cb){ return D.onValue(R(p), function(s){ cb(s.val()); }, function(e){ console.warn("read refused", p, e && e.code); cb(null); }); },
+      now: function(){ return Date.now()+offset; }
+    };
+    var listeners = [], ready = false, readyWait = [];
+    function shape(u){
+      if(!u || u.isAnonymous) return null;
+      return {uid:u.uid, email:(u.email||"").toLowerCase(), name:u.displayName||u.email, verified:!!u.emailVerified};
+    }
+    Au.onAuthStateChanged(auth, function(u){
+      if(!ready){ ready=true; readyWait.forEach(function(f){ f(); }); }
+      listeners.forEach(function(f){ f(shape(u)); });
+    });
+    function whenReady(){ return ready ? Promise.resolve() : new Promise(function(r){ readyWait.push(r); }); }
+    var authApi = {
+      teacher: function(){ return shape(auth.currentUser); },
+      onTeacher: function(f){ listeners.push(f); if(ready) f(shape(auth.currentUser)); },
+      signUp: function(email, pw, name){
+        return Au.createUserWithEmailAndPassword(auth, email, pw).then(function(c){
+          return Au.updateProfile(c.user, {displayName:name}).then(function(){ return Au.sendEmailVerification(c.user); })
+            .then(function(){ listeners.forEach(function(f){ f(shape(auth.currentUser)); }); });
+        }).catch(friendly);
+      },
+      signIn: function(email, pw){ return Au.signInWithEmailAndPassword(auth, email, pw).catch(friendly); },
+      signOut: function(){ return Au.signOut(auth); },
+      sendVerify: function(){ return auth.currentUser ? Au.sendEmailVerification(auth.currentUser).catch(friendly) : Promise.resolve(); },
+      refresh: function(){
+        var u = auth.currentUser; if(!u) return Promise.resolve(null);
+        return u.reload().then(function(){ return u.getIdToken(true); }).then(function(){
+          var s = shape(auth.currentUser); listeners.forEach(function(f){ f(s); }); return s; });
+      },
+      resetPassword: function(email){ return Au.sendPasswordResetEmail(auth, email).catch(friendly); },
+      student: function(){
+        return whenReady().then(function(){
+          if(auth.currentUser) return auth.currentUser.uid;
+          return Au.signInAnonymously(auth).then(function(c){ return c.user.uid; });
+        });
+      }
+    };
+    function friendly(e){
+      var c = (e && e.code) || "", msg = {
+        "auth/email-already-in-use":"That email already has an account. Sign in instead.",
+        "auth/invalid-credential":"That email and password don't match.",
+        "auth/wrong-password":"That email and password don't match.",
+        "auth/user-not-found":"No account with that email yet. Create one.",
+        "auth/weak-password":"Use at least 6 characters for the password.",
+        "auth/invalid-email":"That doesn't look like an email address.",
+        "auth/too-many-requests":"Too many tries. Wait a minute and try again.",
+        "auth/network-request-failed":"Can't reach the server. Check the Wi-Fi and try again."
+      }[c];
+      throw new Error(msg || (e && e.message) || "Something went wrong.");
+    }
+    DB = api; AUTH = authApi;
+  });
+}
+
+function startData(){
+  if(FIREBASE_CONFIG && FIREBASE_CONFIG.apiKey){
+    return makeFirebase(FIREBASE_CONFIG).catch(function(e){
+      console.error("Firebase failed to load; falling back to demo", e);
+      DB = makeDemo(); AUTH = makeDemoAuth(); DB.loadError = true;
+    });
+  }
+  DB = makeDemo(); AUTH = makeDemoAuth();
+  return Promise.resolve();
+}
+
+/* ---------- helpers ---------- */
+var APP = document.getElementById("app");
+var SUBS = [], TIMERS = [], CLEANUPS = [];
+function $(s, r){ return (r||document).querySelector(s); }
+function $$(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function sub(path, cb){ var u = DB.on(path, cb); SUBS.push(u); return u; }
+function every(ms, f){ var t = setInterval(f, ms); TIMERS.push(t); return t; }
+function teardown(){
+  SUBS.splice(0).forEach(function(u){ try{ u(); }catch(e){} });
+  TIMERS.splice(0).forEach(function(t){ clearInterval(t); clearTimeout(t); });
+  CLEANUPS.splice(0).forEach(function(f){ try{ f(); }catch(e){} });
+}
+var toastT;
+function toast(msg){
+  var t = $("#toast"); t.textContent = msg; t.classList.add("on");
+  clearTimeout(toastT); toastT = setTimeout(function(){ t.classList.remove("on"); }, 2600);
+}
+function go(h){ if(location.hash===h) route(); else location.hash = h; }
+function baseURL(){ return location.origin + location.pathname; }
+function joinURL(code){ return baseURL() + "#/join/" + code; }
+function copy(text){
+  if(navigator.clipboard) navigator.clipboard.writeText(text).then(function(){ toast("Copied"); }, function(){ toast(text); });
+  else toast(text);
+}
+function schoolYear(ms){
+  var d = new Date(ms||Date.now()), y = d.getFullYear();
+  if(d.getMonth() < 6) y -= 1;               /* school year turns over July 1 */
+  return y + "-" + String((y+1)%100).padStart(2,"0");
+}
+function yearName(yr){ var y = parseInt(yr,10); return y + "–" + String(y+1).slice(2); }
+function fmtDate(ms){ if(!ms) return ""; var d=new Date(ms); return d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}); }
+function fmtSecs(ms){ var s=Math.max(0,Math.round(ms/1000)); return Math.floor(s/60)+":"+String(s%60).padStart(2,"0"); }
+function normText(s){
+  return String(s||"").replace(/\r/g,"").replace(/[‘’‛′`]/g,"'").replace(/[“”„″]/g,'"')
+    .replace(/[–—−]/g,"-").replace(/…/g,"...").replace(/[ \t]/g," ").replace(/[​-‍﻿]/g,"");
+}
+function clean1(s){ return s.replace(/\s+/g," ").trim(); }
+function parseItems(lv){
+  var raw = normText(lv && lv.text);
+  if(!raw.trim()) return [];
+  if(lv.kind==="words") return raw.split(/[\s,;]+/).map(function(w){ return w.trim(); }).filter(Boolean);
+  var blocks = raw.split(/\n\s*\n/).map(clean1).filter(Boolean);
+  if(blocks.length<=1){ var lines = raw.split(/\n/).map(clean1).filter(Boolean); if(lines.length>1) blocks = lines; }
+  return blocks;
+}
+function pickText(lv, last){
+  var items = parseItems(lv);
+  if(!items.length) return "";
+  if(lv.kind==="words"){
+    var n = Math.max(5, Math.min(120, parseInt(lv.n,10)||25)), out = [], prev = "";
+    for(var i=0;i<n;i++){
+      var w, tries=0;
+      do { w = items[Math.floor(Math.random()*items.length)]; } while(items.length>1 && w===prev && ++tries<10);
+      out.push(w); prev = w;
+    }
+    return out.join(" ");
+  }
+  if(items.length===1) return items[0];
+  var t, k=0; do { t = items[Math.floor(Math.random()*items.length)]; } while(t===last && ++k<10);
+  return t;
+}
+function levelList(game){
+  var L = (game && game.levels) || {};
+  return Object.keys(L).map(function(k){ var v=L[k]; v.id=k; return v; })
+    .sort(function(a,b){ return (a.order||0)-(b.order||0); });
+}
+function sha(s){
+  s = String(s).toLowerCase().trim();
+  if(window.crypto && crypto.subtle && window.TextEncoder){
+    return crypto.subtle.digest("SHA-256", new TextEncoder().encode("rtr:"+s)).then(function(b){
+      return Array.prototype.map.call(new Uint8Array(b), function(x){ return x.toString(16).padStart(2,"0"); }).join("").slice(0,20);
+    });
+  }
+  var h=2166136261; for(var i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,16777619); }
+  return Promise.resolve("f"+(h>>>0).toString(16));
+}
+var EMAIL_OK = /^[a-z0-9._%+-]+@(student\.)?regisjesuit\.com$/i;
+var TEACHER_OK = /^[a-z0-9._%+-]+@regisjesuit\.com$/i;
+function emailParts(email){
+  var m = /^([a-z'-]+?)([a-z]{2})(\d{2})@student\.regisjesuit\.com$/i.exec(email||"");
+  if(!m) return null;
+  return {last: m[1], grad: 2000 + parseInt(m[3],10)};
+}
+function displayName(first, email){
+  first = clean1(String(first||"")).slice(0,16);
+  first = first.charAt(0).toUpperCase() + first.slice(1);
+  var p = emailParts(email);
+  if(p && first && !/\s/.test(first)) return first + " " + p.last.charAt(0).toUpperCase() + ".";
+  return first;
+}
+
+/* ---------- student identity (this browser) ---------- */
+function meStore(){ return DB.mode==="demo" ? sessionStorage : localStorage; }
+function getMe(){ try{ return JSON.parse(meStore().getItem("rtr.me")) || null; }catch(e){ return null; } }
+function setMe(m){ meStore().setItem("rtr.me", JSON.stringify(m)); }
+function rememberGame(code, title){
+  var m = getMe(); if(!m) return;
+  m.games = (m.games||[]).filter(function(g){ return g.code!==code; });
+  m.games.unshift({code:code, title:title}); m.games = m.games.slice(0,8); setMe(m);
+}
+
+/* ---------- small visuals ---------- */
+function racerPicker(current, onPick){
+  var wrap = document.createElement("div"); wrap.className = "pick";
+  RACERS.forEach(function(r){
+    var b = document.createElement("button"); b.type="button"; b.setAttribute("aria-pressed", r.id===current?"true":"false");
+    b.dataset.r = r.id; b.innerHTML = racerSVG(r.id) + "<span>"+esc(r.name)+"</span>"; b.title = r.name;
+    b.addEventListener("click", function(){
+      $$("button", wrap).forEach(function(x){ x.setAttribute("aria-pressed", x===b?"true":"false"); });
+      onPick(r.id);
+    });
+    b.addEventListener("mouseenter", function(){ b.classList.add("go"); });
+    b.addEventListener("mouseleave", function(){ b.classList.remove("go"); });
+    wrap.appendChild(b);
+  });
+  return wrap;
+}
+function sparkline(vals, w, h){
+  w=w||160; h=h||36;
+  if(!vals.length) return "";
+  var mx = Math.max.apply(null, vals), mn = Math.min.apply(null, vals);
+  if(mx===mn){ mx+=1; mn-=1; }
+  var pts = vals.map(function(v,i){ var x = vals.length===1? w/2 : 4 + i*(w-8)/(vals.length-1); var y = h-4-(v-mn)*(h-8)/(mx-mn); return [x,y]; });
+  var d = pts.map(function(p,i){ return (i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1); }).join(" ");
+  var last = pts[pts.length-1];
+  return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" aria-hidden="true"><path d="'+d+'" fill="none" stroke="var(--red)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="'+last[0]+'" cy="'+last[1]+'" r="3.2" fill="var(--red)"/></svg>';
+}
+var MOUNTAINS = '<svg viewBox="0 0 1000 54" preserveAspectRatio="none" aria-hidden="true">'+
+  '<path d="M0 54 L0 34 L70 20 L120 30 L190 8 L250 26 L310 14 L380 32 L440 12 L520 30 L590 6 L660 28 L720 16 L800 33 L870 10 L940 26 L1000 18 L1000 54 Z" fill="var(--mtn1)"/>'+
+  '<path d="M190 8 L172 13 L186 12 L196 16 L206 12 Z M590 6 L572 12 L587 11 L598 15 L608 11 Z M870 10 L852 16 L866 15 L878 18 L888 15 Z" fill="var(--snow)"/>'+
+  '<path d="M0 54 L0 42 L90 36 L160 44 L240 34 L330 44 L420 36 L520 46 L610 37 L700 45 L790 38 L880 46 L1000 38 L1000 54 Z" fill="var(--mtn2)"/></svg>';
+
+/* ---------- TRACK ---------- */
+function Track(el, opts){
+  opts = opts||{};
+  var lanes = {}, order = [];
+  el.className = "track" + (opts.size ? " "+opts.size : "");
+  el.innerHTML = '<div class="sky">'+MOUNTAINS+'</div><div class="lanes"></div>';
+  var lanesEl = $(".lanes", el);
+  function sizeFor(n){
+    el.classList.remove("compact","big");
+    if(n>9) el.classList.add("compact"); else if(opts.size==="big") el.classList.add("big");
+  }
+  return {
+    set: function(players){
+      /* players: [{id,name,racer,me,ghost}] — rebuild only if membership changed */
+      var ids = players.map(function(p){ return p.id; }).join("|");
+      if(ids === order.join("|")) { players.forEach(function(p){ var L=lanes[p.id]; if(L) L.tag.textContent = p.name + (p.me ? " (you)" : ""); }); return; }
+      order = players.map(function(p){ return p.id; });
+      lanesEl.innerHTML = ""; var old = lanes; lanes = {};
+      sizeFor(players.length);
+      players.forEach(function(p){
+        var d = document.createElement("div");
+        d.className = "lane" + (p.me?" me":"") + (p.ghost?" ghost":"");
+        d.innerHTML = '<div class="start"></div><div class="finish"></div><div class="runner">'+racerSVG(p.racer)+'<div class="lbl"><div><span class="place"></span><span class="nm"></span></div><div class="wp"></div></div></div>';
+        lanesEl.appendChild(d);
+        var L = {el:d, runner:$(".runner",d), lbl:$(".lbl",d), tag:$(".nm",d), place:$(".place",d), wpm:$(".wp",d), p:0};
+        L.tag.textContent = p.name + (p.me ? " (you)" : "");
+        lanes[p.id] = L;
+        if(old[p.id]) this.move(p.id, old[p.id].p);
+      }, this);
+    },
+    move: function(id, p, moving){
+      var L = lanes[id]; if(!L) return;
+      p = Math.max(0, Math.min(1, p||0)); L.p = p;
+      L.el.style.setProperty("--p", p);
+      L.lbl.classList.toggle("left", p >= 0.72);
+      L.el.classList.toggle("go", !!moving && p < 1);
+    },
+    wpm: function(id, w){ var L=lanes[id]; if(L) L.wpm.textContent = w ? (Math.round(w)+" wpm") : ""; },
+    place: function(id, n){
+      var L = lanes[id]; if(!L) return;
+      L.place.className = "place" + (n ? " on p"+n : "");
+      L.place.textContent = n ? ordinal(n) : "";
+      if(n) L.el.classList.remove("go");
+    },
+    stopAll: function(){ Object.keys(lanes).forEach(function(k){ lanes[k].el.classList.remove("go"); }); }
+  };
+}
+function ordinal(n){ var s=["th","st","nd","rd"], v=n%100; return n+(s[(v-20)%10]||s[v]||s[0]); }
+
+/* ---------- TYPER: the typing surface ---------- */
+function Typer(box, text, hooks){
+  var spans = [], i = 0, correct = 0, errs = 0, streak = 0, best = 0, armed = false, t0 = 0, done = false, badT;
+  var html = [], idx = 0;
+  text.split(/( )/).forEach(function(tok){
+    if(!tok) return;
+    if(tok===" "){ html.push('<span class="c sp" data-i="'+idx+'"> </span>'); idx++; return; }
+    html.push('<span class="w">');
+    for(var k=0;k<tok.length;k++){ html.push('<span class="c" data-i="'+idx+'">'+esc(tok[k])+'</span>'); idx++; }
+    html.push('</span>');
+  });
+  box.innerHTML = html.join("") + '<div class="clickhint">Click here, then type</div><input class="hidin" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Type the passage">';
+  spans = $$(".c", box);
+  var input = $(".hidin", box);
+  box.classList.add("locked");
+  function paint(){
+    var prev = $(".c.cur", box); if(prev) prev.classList.remove("cur","bad");
+    var pw = $(".w.curw", box); if(pw) pw.classList.remove("curw");
+    for(var k=Math.max(0,i-3);k<i;k++) spans[k].classList.add("done");
+    if(i < spans.length){ spans[i].classList.add("cur"); if(spans[i].parentNode.classList.contains("w")) spans[i].parentNode.classList.add("curw"); }
+  }
+  function state(){
+    var ms = armed ? (performance.now() - t0) : 0, min = ms/60000;
+    return {p: spans.length ? i/spans.length : 0, i:i, len:spans.length, ms:ms,
+      wpm: min>0.02 ? (i/5)/min : 0, acc: (correct+errs) ? Math.round(100*correct/(correct+errs)) : 100,
+      errs:errs, streak:streak, best:best, done:done};
+  }
+  function key(ch){
+    if(!armed || done) return;
+    var want = text[i];
+    if(ch === want){
+      spans[i].classList.remove("bad"); i++; correct++; streak++; if(streak>best) best=streak;
+      paint();
+      if(hooks.onKey) hooks.onKey(state());
+      if(i >= spans.length){ done = true; box.classList.remove("armed"); if(hooks.onFinish) hooks.onFinish(state()); }
+    } else {
+      errs++; streak = 0;
+      var s = spans[i]; s.classList.remove("bad"); void s.offsetWidth; s.classList.add("bad");
+      clearTimeout(badT); badT = setTimeout(function(){ s.classList.remove("bad"); }, 450);
+      if(hooks.onKey) hooks.onKey(state());
+    }
+  }
+  function drain(){ var v = input.value; input.value = ""; if(v.length>2) { toast("Pasting is off — the point is the keys."); return; } for(var k=0;k<v.length;k++) key(v[k]); }
+  input.addEventListener("beforeinput", function(e){
+    if(/^insertFrom(Paste|Drop)|insertReplacementText/.test(e.inputType||"")){ e.preventDefault(); toast("Pasting is off — the point is the keys."); }
+  });
+  input.addEventListener("input", function(e){ if(e.isComposing) return; drain(); });
+  input.addEventListener("compositionend", function(){ setTimeout(drain, 0); });
+  input.addEventListener("keydown", function(e){ if(e.key==="Enter"||e.key==="Tab") e.preventDefault(); });
+  input.addEventListener("paste", function(e){ e.preventDefault(); });
+  input.addEventListener("focus", function(){ box.classList.remove("needfocus"); });
+  input.addEventListener("blur", function(){ if(armed && !done) box.classList.add("needfocus"); });
+  box.addEventListener("mousedown", function(e){ if(e.target!==input){ e.preventDefault(); input.focus({preventScroll:true}); } });
+  paint();
+  return {
+    arm: function(){ armed = true; t0 = performance.now(); box.classList.remove("locked"); box.classList.add("armed"); input.focus({preventScroll:true}); },
+    reveal: function(){ box.classList.remove("locked"); },
+    focus: function(){ input.focus({preventScroll:true}); },
+    stop: function(){ done = true; armed && box.classList.remove("armed"); input.blur(); },
+    state: state
+  };
+}
+
+/* ---------- countdown lights ---------- */
+function Lights(host){
+  var el = document.createElement("div"); el.className = "countdown";
+  el.innerHTML = '<div class="lights"><div class="light"></div><div class="light"></div><div class="light"></div></div><div class="msg"></div>';
+  host.appendChild(el);
+  var L = $$(".light", el), msg = $(".msg", el);
+  return {
+    show: function(secsLeft){
+      L.forEach(function(x){ x.className = "light"; });
+      if(secsLeft > 3){ msg.textContent = "Get ready…"; return; }
+      if(secsLeft >= 3){ L[0].classList.add("r"); msg.textContent = "3"; }
+      else if(secsLeft >= 2){ L[0].classList.add("r"); L[1].classList.add("y"); msg.textContent = "2"; }
+      else if(secsLeft > 0){ L[0].classList.add("r"); L[1].classList.add("y"); L[2].classList.add("y"); msg.textContent = "1"; }
+      else { L.forEach(function(x){ x.classList.add("g"); }); msg.textContent = "GO!"; }
+    },
+    wait: function(t){ L.forEach(function(x){ x.className="light"; }); msg.textContent = t; },
+    remove: function(){ el.remove(); }
+  };
+}
+
+/* ---------- confetti ---------- */
+function confetti(){
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var c = document.createElement("canvas"); c.id = "confetti"; document.body.appendChild(c);
+  var x = c.getContext("2d"), W = c.width = innerWidth, H = c.height = innerHeight, cols = ["#C11430","#e2b23c","#3fa34d","#1f6fd1","#ffffff"];
+  var bits = []; for(var i=0;i<140;i++) bits.push({x:Math.random()*W, y:-20-Math.random()*H*.4, v:2+Math.random()*3, r:Math.random()*6.28, s:4+Math.random()*5, c:cols[i%cols.length], d:(Math.random()-.5)*2});
+  var t = 0; (function f(){ t++; x.clearRect(0,0,W,H);
+    bits.forEach(function(b){ b.y+=b.v; b.x+=b.d; b.r+=.1; x.save(); x.translate(b.x,b.y); x.rotate(b.r); x.fillStyle=b.c; x.fillRect(-b.s/2,-b.s/4,b.s,b.s/2); x.restore(); });
+    if(t<200) requestAnimationFrame(f); else c.remove(); })();
+}
+
+/* ==========================================================================
+   STUDENT SIDE: home / join, game hub, practice races, live races, boards
+   ========================================================================== */
+function viewHome(prefill){
+  var me = getMe() || {};
+  var html =
+  '<div class="hero"><div id="heroTrack"></div></div>'+
+  '<div class="split">'+
+   '<section class="panel" aria-labelledby="joinH">'+
+    '<div class="card-title" id="joinH">Students: join your class’s race</div>'+
+    '<p class="muted small">Your teacher gives you a game code. Type it here.</p>'+
+    '<div class="step"><div class="n">1</div><div class="grow"><label class="f" for="jCode" style="margin-top:0">Game code</label>'+
+      '<input id="jCode" class="code codebox" type="text" maxlength="6" placeholder="ABC12" value="'+esc(prefill||"")+'" autocomplete="off" spellcheck="false"></div></div>'+
+    '<div class="step"><div class="n">2</div><div class="grow"><label class="f" for="jEmail" style="margin-top:0">Your school email</label>'+
+      '<input id="jEmail" type="email" placeholder="lastnamefi28@student.regisjesuit.com" value="'+esc(me.email||"")+'" autocomplete="email" spellcheck="false">'+
+      '<label class="f" for="jFirst">First name</label><input id="jFirst" type="text" maxlength="16" value="'+esc(me.first||"")+'" autocomplete="given-name">'+
+      '<div class="hint" id="jPreview"></div></div></div>'+
+    '<div class="step"><div class="n">3</div><div class="grow"><div class="f" style="margin-top:0">Pick your racer</div><div id="jPick"></div></div></div>'+
+    '<div class="row" style="margin-top:14px"><button class="primary big" id="jGo" type="button">Let’s race →</button></div>'+
+    '<div class="err" id="jErr" role="alert"></div>'+
+   '</section>'+
+   '<section class="panel">'+
+    '<div class="card-title">Teachers: make a race from your own words</div>'+
+    '<p>Paste word lists or paragraphs from your class — vocabulary, a reading, terms for the test. Students race each other live or practice against classmates’ best times.</p>'+
+    '<ul class="small" style="padding-left:20px;margin:8px 0 14px">'+
+     '<li>Levels you design, each with its own top-10 board</li>'+
+     '<li>Boards for each class section, each school year, and all-time</li>'+
+     '<li>Every student’s progress, with a spreadsheet download</li></ul>'+
+    '<button class="primary" type="button" id="toTeach">Teacher sign-in →</button>'+
+    (me.games && me.games.length ? '<h3 style="margin-top:22px">Your recent games</h3><div class="row" id="recent"></div>' : '')+
+   '</section>'+
+  '</div>';
+  APP.innerHTML = html;
+  var tr = Track($("#heroTrack"));
+  tr.set([{id:"a",name:"Frog",racer:"frog"},{id:"b",name:"Race car",racer:"car"},{id:"c",name:"St. Ignatius",racer:"ignatius"}]);
+  $("#heroTrack").classList.add("loop");
+  $$("#heroTrack .lane").forEach(function(l){ l.classList.add("go"); });
+  var racer = me.racer || "frog";
+  $("#jPick").appendChild(racerPicker(racer, function(r){ racer = r; }));
+  function preview(){
+    var e = $("#jEmail").value.trim(), f = $("#jFirst").value.trim();
+    var p = emailParts(e), n = displayName(f, e);
+    $("#jPreview").textContent = n ? ("Leaderboards will show you as “"+n+"”" + (p ? " · Class of "+p.grad : "")) : "Only your first name and last initial show on leaderboards.";
+  }
+  $("#jEmail").addEventListener("input", preview); $("#jFirst").addEventListener("input", preview); preview();
+  $("#jCode").addEventListener("input", function(){ this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g,""); });
+  $("#toTeach").addEventListener("click", function(){ go("#/teach"); });
+  if(me.games) me.games.forEach(function(g){
+    var b = document.createElement("button"); b.type="button"; b.innerHTML = esc(g.title)+' <span class="code muted">'+esc(g.code)+'</span>';
+    b.addEventListener("click", function(){ go("#/g/"+g.code); }); $("#recent").appendChild(b);
+  });
+  if(!prefill) $("#jCode").focus(); else if(!me.email) $("#jEmail").focus();
+  $("#jGo").addEventListener("click", function(){
+    var code = $("#jCode").value.trim().toUpperCase(), email = $("#jEmail").value.trim().toLowerCase(), first = $("#jFirst").value.trim(), err = $("#jErr");
+    err.textContent = "";
+    if(!/^[A-Z0-9]{4,6}$/.test(code)) { err.textContent = "Type the game code from your teacher."; $("#jCode").focus(); return; }
+    if(!EMAIL_OK.test(email)) { err.textContent = "Use your Regis Jesuit school email."; $("#jEmail").focus(); return; }
+    if(!first) { err.textContent = "Type your first name."; $("#jFirst").focus(); return; }
+    var btn = this; btn.disabled = true;
+    AUTH.student().then(function(){ return DB.get("games/"+code); }).then(function(g){
+      if(!g){ btn.disabled=false; err.textContent = "No game with the code "+code+". Check it with your teacher."; return; }
+      return sha(email).then(function(sid){
+        var m = getMe() || {};
+        m.email = email; m.first = first; m.name = displayName(first, email); m.racer = racer; m.sid = sid; m.secs = m.secs||{};
+        setMe(m); rememberGame(code, g.title);
+        go("#/g/"+code);
+      });
+    }).catch(function(e){ btn.disabled=false; err.textContent = "Couldn’t reach the race server. " + (e.message||""); });
+  });
+}
+
+function needMe(code){
+  var me = getMe();
+  if(!me || !me.sid){ go("#/join/"+code); return null; }
+  return me;
+}
+
+/* -------- roster record for this student in this game -------- */
+function touchRoster(code, game, me){
+  if(!game.open) return Promise.resolve();
+  var p = emailParts(me.email);
+  return DB.update("roster/"+code+"/"+me.sid, {email:me.email, name:me.name, sec:(me.secs&&me.secs[code])||"", grad:p?p.grad:0, last:DB.now()})
+    .catch(function(e){ console.warn("roster", e); });
+}
+
+/* ---------- GAME HUB ---------- */
+function viewHub(code, tab){
+  var me = needMe(code); if(!me) return;
+  tab = tab || "race";
+  APP.innerHTML = '<div class="empty">Loading the game…</div>';
+  AUTH.student().then(function(uid){
+    sub("games/"+code, function(game){
+      if(!game){ APP.innerHTML = '<div class="panel"><h2>Game not found</h2><p>The code <b class="code">'+esc(code)+'</b> doesn’t match a game. It may have been deleted.</p><button class="primary" onclick="go(\'#/\')">Back</button></div>'; return; }
+      HUB.game = game; HUB.code = code; HUB.uid = uid;
+      if(!HUB.built){ buildHub(code, game, me, tab); HUB.built = true; touchRoster(code, game, me); rememberGame(code, game.title); }
+      else refreshHub();
+    });
+  });
+}
+var HUB = {};
+function buildHub(code, game, me, tab){
+  var secs = (game.sections||[]).filter(Boolean);
+  APP.innerHTML =
+   '<div class="gamehead"><div class="grow"><div class="t" id="hTitle"></div><div class="muted small" id="hBy"></div></div>'+
+    '<div class="me-chip" title="This is you">'+racerSVG(me.racer)+'<b>'+esc(me.name)+'</b></div>'+
+    '<button type="button" class="ghost x" id="hSwitch" title="Not you? Sign in as someone else">Not you?</button></div>'+
+   (secs.length ? '<div class="row" style="margin-top:10px"><label for="hSec" class="small"><b>Your class section</b></label><select id="hSec" style="width:auto"><option value="">Choose…</option>'+
+      secs.map(function(s){ return '<option>'+esc(s)+'</option>'; }).join("")+'</select></div>' : '')+
+   '<div id="liveSlot"></div>'+
+   '<div class="tabs" role="tablist">'+
+     '<button class="tab" role="tab" data-t="race">Race</button>'+
+     '<button class="tab" role="tab" data-t="boards">Leaderboards</button>'+
+     '<button class="tab" role="tab" data-t="progress">My progress</button>'+
+     '<button class="tab" role="tab" data-t="racer">My racer</button></div>'+
+   '<div id="hBody"></div>';
+  $("#hSwitch").addEventListener("click", function(){ go("#/join/"+code); });
+  if($("#hSec")){
+    $("#hSec").value = (me.secs||{})[code] || "";
+    $("#hSec").addEventListener("change", function(){
+      var m = getMe(); m.secs = m.secs||{}; m.secs[code] = this.value; setMe(m); touchRoster(code, HUB.game, m); toast("Section saved");
+    });
+  }
+  $$(".tab").forEach(function(b){ b.addEventListener("click", function(){ HUB.tab = b.dataset.t; refreshHub(); }); });
+  HUB.tab = tab;
+  sub("live/"+code, function(L){ HUB.live = L; liveBanner(); });
+  every(15000, liveBanner);
+  refreshHub();
+}
+function liveFresh(L){ return L && L.rid && (DB.now() - (L.hb||0) < 60000); }
+function liveBanner(){
+  var slot = $("#liveSlot"); if(!slot) return;
+  var L = HUB.live;
+  if(!liveFresh(L)){ slot.innerHTML = ""; return; }
+  if(L.state==="lobby"){
+    slot.innerHTML = '<div class="live-banner"><div class="grow">🏁 Live race is open: '+esc(L.name||"")+'</div><button type="button" class="big" id="liveJoin">Join the race</button></div>';
+    $("#liveJoin").addEventListener("click", function(){ go("#/live/"+HUB.code); });
+  } else {
+    slot.innerHTML = '<div class="live-banner wait"><div class="grow">A live race is running. Click to wait at the starting line for the next one.</div><button type="button" id="liveJoin">Wait for next race</button></div>';
+    $("#liveJoin").addEventListener("click", function(){ go("#/live/"+HUB.code); });
+  }
+}
+function refreshHub(){
+  var game = HUB.game, code = HUB.code, me = getMe();
+  if(!$("#hTitle")) return;
+  $("#hTitle").textContent = game.title;
+  $("#hBy").textContent = (game.ownerName ? game.ownerName + " · " : "") + "Code " + code + (game.open ? "" : " · closed: races won’t count");
+  $$(".tab").forEach(function(b){ b.setAttribute("aria-selected", b.dataset.t===HUB.tab ? "true":"false"); });
+  var body = $("#hBody");
+  if(HUB.tab==="race") hubRace(body, code, game, me);
+  else if(HUB.tab==="boards") Boards(body, code, game, {sid:me.sid});
+  else if(HUB.tab==="progress") hubProgress(body, code, game, me);
+  else hubRacer(body, me);
+}
+function hubRace(body, code, game, me){
+  var levels = levelList(game);
+  if(!levels.length){ body.innerHTML = '<div class="empty" style="margin-top:14px">Your teacher hasn’t added any levels yet.</div>'; return; }
+  body.innerHTML = '<p class="muted small" style="margin-top:12px">Pick a level. You’ll race classmates’ best runs — beat them to climb the board.</p><div class="levels" id="lvls"></div>';
+  var yr = schoolYear();
+  Promise.all([DB.get("bestAll/"+code), DB.get("best/"+code)]).then(function(r){
+    var all = r[0]||{}, byYr = r[1]||{};
+    levels.forEach(function(lv, n){
+      var items = parseItems(lv), mine = (all[lv.id]||{})[me.sid], board = ((byYr[lv.id]||{})[yr])||{};
+      var ranked = Object.keys(board).map(function(k){ return {k:k, w:board[k].wpm}; }).sort(function(a,b){ return b.w-a.w; });
+      var rank = 0; ranked.forEach(function(x,i){ if(x.k===me.sid) rank=i+1; });
+      var d = document.createElement("div"); d.className = "lvl";
+      d.innerHTML = '<div><div class="ln">'+(n+1)+'. '+esc(lv.name||"Level")+'</div><div class="lk">'+
+        (lv.kind==="words" ? (lv.n||25)+' words from a list of '+items.length : items.length+' passage'+(items.length===1?"":"s"))+'</div></div>'+
+        '<div class="stats"><div><b>'+(mine?Math.round(mine.wpm):"–")+'</b>your best WPM</div><div><b>'+(rank?"#"+rank:"–")+'</b>class rank</div><div><b>'+ranked.length+'</b>racers</div></div>'+
+        '<button class="primary" type="button"'+(items.length?"":" disabled")+'>Race</button>';
+      $("button", d).addEventListener("click", function(){ go("#/race/"+code+"/"+lv.id); });
+      $("#lvls").appendChild(d);
+    });
+  });
+}
+function hubRacer(body, me){
+  body.innerHTML = '<div class="panel"><h2>Choose your racer</h2><p class="muted small">Your racer shows on every track and leaderboard.</p><div id="rp"></div></div>';
+  $("#rp").appendChild(racerPicker(me.racer, function(r){ var m=getMe(); m.racer=r; setMe(m); $(".me-chip").innerHTML = racerSVG(r)+'<b>'+esc(m.name)+'</b>'; toast("Racer saved"); }));
+}
+function hubProgress(body, code, game, me){
+  body.innerHTML = '<div class="empty" style="margin-top:14px">Loading your races…</div>';
+  DB.get("results/"+code+"/"+me.sid).then(function(R){
+    var rows = Object.keys(R||{}).map(function(k){ return R[k]; }).sort(function(a,b){ return a.at-b.at; });
+    if(!rows.length){ body.innerHTML = '<div class="empty" style="margin-top:14px">No races yet. Pick a level on the Race tab.</div>'; return; }
+    var levels = levelList(game), html = '<div class="levels">';
+    levels.forEach(function(lv){
+      var mine = rows.filter(function(r){ return r.lid===lv.id && r.fin; });
+      if(!mine.length) return;
+      var w = mine.map(function(r){ return Math.round(r.wpm); }), last5 = w.slice(-5);
+      var avg = Math.round(last5.reduce(function(a,b){ return a+b; },0)/last5.length);
+      var acc = Math.round(mine.slice(-5).reduce(function(a,r){ return a+r.acc; },0)/Math.min(5,mine.length));
+      var first = w[0], gain = Math.max.apply(null,w) - first;
+      html += '<div class="lvl"><div class="ln">'+esc(lv.name)+'</div>'+
+        '<div class="stats"><div><b>'+Math.max.apply(null,w)+'</b>best WPM</div><div><b>'+avg+'</b>last 5 avg</div><div><b>'+acc+'%</b>accuracy</div></div>'+
+        sparkline(w.slice(-20), 230, 44)+
+        '<div class="small muted">'+mine.length+' race'+(mine.length===1?"":"s")+(gain>0 ? ' · <b style="color:var(--good)">+'+gain+' WPM</b> since your first' : '')+'</div></div>';
+    });
+    html += '</div><div class="panel"><h2>Recent races</h2><div class="tablewrap"><table class="t"><thead><tr><th>Date</th><th>Level</th><th>WPM</th><th>Accuracy</th><th>Time</th><th></th></tr></thead><tbody>';
+    var names = {}; levels.forEach(function(l){ names[l.id]=l.name; });
+    rows.slice(-15).reverse().forEach(function(r){
+      html += '<tr><td>'+fmtDate(r.at)+'</td><td>'+esc(names[r.lid]||"(removed level)")+'</td><td class="num">'+Math.round(r.wpm)+'</td><td>'+r.acc+'%</td><td>'+fmtSecs(r.ms)+'</td><td class="small muted">'+
+        (r.live ? (r.place? ordinal(r.place)+" in live race":"live race") : "practice")+(r.fin?"":" · didn’t finish")+'</td></tr>';
+    });
+    body.innerHTML = html + '</tbody></table></div></div>';
+  });
+}
+
+/* ---------- LEADERBOARDS (shared by students and teachers) ---------- */
+function Boards(body, code, game, opt){
+  opt = opt||{};
+  var levels = levelList(game), secs = (game.sections||[]).filter(Boolean), yr = schoolYear();
+  if(!levels.length){ body.innerHTML = '<div class="empty" style="margin-top:14px">No levels yet.</div>'; return; }
+  var st = Boards.st = Boards.st && Boards.st.code===code ? Boards.st : {code:code, lid:levels[0].id, per:yr, sec:""};
+  body.innerHTML = '<div class="filters" style="margin-top:14px">'+
+    '<select id="bLvl" aria-label="Level">'+levels.map(function(l){ return '<option value="'+esc(l.id)+'">'+esc(l.name)+'</option>'; }).join("")+'</select>'+
+    '<select id="bPer" aria-label="Time period"></select>'+
+    (secs.length ? '<select id="bSec" aria-label="Section"><option value="">All sections</option>'+secs.map(function(s){ return '<option>'+esc(s)+'</option>'; }).join("")+'</select>' : '')+
+    '</div><div id="bTable"></div>';
+  $("#bLvl").value = st.lid; if(!$("#bLvl").value){ st.lid = levels[0].id; $("#bLvl").value = st.lid; }
+  if($("#bSec")) $("#bSec").value = st.sec;
+  function load(){
+    DB.get("best/"+code+"/"+st.lid).then(function(byYr){
+      byYr = byYr||{};
+      var yrs = Object.keys(byYr); if(yrs.indexOf(yr)<0) yrs.push(yr);
+      yrs.sort().reverse();
+      $("#bPer").innerHTML = yrs.map(function(y){ return '<option value="'+y+'">'+(y===yr?"This school year ("+yearName(y)+")":yearName(y))+'</option>'; }).join("")+'<option value="all">All-time</option>';
+      $("#bPer").value = st.per; if(!$("#bPer").value){ st.per = yr; $("#bPer").value = yr; }
+      var src = st.per==="all" ? DB.get("bestAll/"+code+"/"+st.lid) : Promise.resolve(byYr[st.per]);
+      return src;
+    }).then(function(rows){
+      var list = Object.keys(rows||{}).map(function(k){ var r=rows[k]; r.sid=k; return r; })
+        .filter(function(r){ return !st.sec || r.sec===st.sec; })
+        .sort(function(a,b){ return (b.wpm-a.wpm) || (b.acc-a.acc) || (a.at-b.at); });
+      var t = $("#bTable");
+      if(!list.length){ t.innerHTML = '<div class="empty">No finished races here yet. Be the first on the board!</div>'; return; }
+      var show = opt.teacher ? list : list.slice(0,10), mineAt = -1;
+      list.forEach(function(r,i){ if(r.sid===opt.sid) mineAt = i; });
+      var html = '<div class="tablewrap"><table class="t"><thead><tr><th>#</th><th></th><th>Racer</th><th>WPM</th><th>Accuracy</th>'+(secs.length?'<th>Section</th>':'')+'<th>Date</th>'+(opt.teacher?'<th></th>':'')+'</tr></thead><tbody>';
+      function row(r,i){
+        return '<tr class="'+(r.sid===opt.sid?"me":"")+'"><td>'+(i<3?'<span class="medal m'+(i+1)+'">'+(i+1)+'</span>':(i+1))+'</td><td>'+racerSVG(r.racer)+'</td><td><b>'+esc(r.name)+'</b>'+(r.sid===opt.sid?' (you)':'')+'</td>'+
+          '<td class="num">'+Math.round(r.wpm)+'</td><td>'+r.acc+'%</td>'+(secs.length?'<td>'+esc(r.sec||"")+'</td>':'')+'<td class="small muted">'+fmtDate(r.at)+'</td>'+
+          (opt.teacher?'<td><button type="button" class="x danger" data-rm="'+esc(r.sid)+'" title="Take this entry off the board">Remove</button></td>':'')+'</tr>';
+      }
+      show.forEach(function(r,i){ html += row(r,i); });
+      if(!opt.teacher && mineAt >= 10) html += '<tr><td colspan="9" class="muted small">…</td></tr>' + row(list[mineAt], mineAt);
+      html += '</tbody></table></div>';
+      if(!opt.teacher) html += '<p class="hint">Top 10 by words per minute on finished races. Ties go to higher accuracy.</p>';
+      t.innerHTML = html;
+      $$("[data-rm]", t).forEach(function(b){ b.addEventListener("click", function(){
+        if(b.dataset.armed){ var p = st.per==="all" ? "bestAll/"+code+"/"+st.lid+"/"+b.dataset.rm : "best/"+code+"/"+st.lid+"/"+st.per+"/"+b.dataset.rm;
+          DB.remove(p).then(load).catch(function(e){ toast(e.message); }); }
+        else { b.dataset.armed = "1"; b.textContent = "Click again"; }
+      }); });
+    });
+  }
+  $("#bLvl").addEventListener("change", function(){ st.lid = this.value; load(); });
+  $("#bPer").addEventListener("change", function(){ st.per = this.value; load(); });
+  if($("#bSec")) $("#bSec").addEventListener("change", function(){ st.sec = this.value; load(); });
+  load();
+}
+
+/* ---------- save a finished (or timed-out) race ---------- */
+function saveResult(code, game, lid, s, extra){
+  var me = getMe(), yr = schoolYear(DB.now()), at = DB.now(), sec = (me.secs||{})[code] || "";
+  var wpm = Math.min(250, Math.round(s.wpm*10)/10), acc = s.acc;
+  var rec = {lid:lid, wpm:wpm, acc:acc, ms:Math.round(s.ms), errs:s.errs, at:at, yr:yr, fin:!!s.done, live:!!(extra&&extra.live), place:(extra&&extra.place)||0, sec:sec};
+  if(!game.open) return Promise.resolve({closed:true});
+  var out = {pb:false, yrBest:false};
+  return DB.push("results/"+code+"/"+me.sid, rec).then(function(){
+    touchRoster(code, game, me);
+    if(!s.done || s.len < 10) return out;
+    var entry = {name:me.name, racer:me.racer, wpm:wpm, acc:acc, at:at, sec:sec};
+    var pA = "bestAll/"+code+"/"+lid+"/"+me.sid, pY = "best/"+code+"/"+lid+"/"+yr+"/"+me.sid;
+    return Promise.all([DB.get(pA), DB.get(pY)]).then(function(cur){
+      var jobs = [];
+      if(!cur[0] || wpm > cur[0].wpm){ out.pb = !!cur[0]; out.first = !cur[0]; jobs.push(DB.set(pA, entry).catch(function(){})); }
+      if(!cur[1] || wpm > cur[1].wpm){ out.yrBest = true; jobs.push(DB.set(pY, entry).catch(function(){})); }
+      return Promise.all(jobs).then(function(){ return out; });
+    });
+  }).catch(function(e){ console.warn("save failed", e); toast("Couldn’t save that race: "+(e.message||"")); return out; });
+}
+
+/* ---------- PRACTICE RACE vs ghosts ---------- */
+function viewRace(code, lid){
+  var me = needMe(code); if(!me) return;
+  APP.innerHTML = '<div class="empty">Lining up the racers…</div>';
+  AUTH.student().then(function(){
+    return Promise.all([DB.get("games/"+code), DB.get("best/"+code+"/"+lid+"/"+schoolYear()), DB.get("bestAll/"+code+"/"+lid+"/"+me.sid)]);
+  }).then(function(r){
+    var game = r[0], board = r[1]||{}, myBest = r[2];
+    var lv = game && game.levels && game.levels[lid];
+    if(!lv){ go("#/g/"+code); return; }
+    lv.id = lid;
+    runPractice(code, game, lv, board, myBest, null);
+  });
+}
+function pickGhosts(board, mySid, myBest){
+  var others = Object.keys(board).filter(function(k){ return k!==mySid; }).map(function(k){ return board[k]; })
+    .sort(function(a,b){ return b.wpm-a.wpm; });
+  var ghosts = [], used = {};
+  function add(e, tag){ if(!e || used[e.name+e.wpm]) return; used[e.name+e.wpm]=1; ghosts.push({name:e.name, racer:e.racer, wpm:e.wpm, tag:tag}); }
+  var mine = myBest ? myBest.wpm : 25;
+  add(others[0], "top");                                                          /* class leader */
+  add(others.filter(function(o){ return o.wpm > mine; }).pop(), "next");          /* the one just ahead of you */
+  add(others.filter(function(o){ return o.wpm <= mine; })[0], "near");            /* the one just behind */
+  if(myBest) ghosts.push({name:"Your best", racer:myBest.racer||"frog", wpm:myBest.wpm, mine:true});
+  var bots = [{name:"Pace bot", racer:"snail", wpm:18},{name:"Pace bot", racer:"bison", wpm:32},{name:"Pace bot", racer:"cheetah", wpm:46},{name:"Pace bot", racer:"rocket", wpm:60}];
+  var bi = 0; while(ghosts.length < 3 && bi < bots.length){ var b = bots[bi++]; b = {name:b.name+" "+b.wpm, racer:b.racer, wpm:b.wpm, bot:true}; ghosts.push(b); }
+  return ghosts.slice(0,4);
+}
+function runPractice(code, game, lv, board, myBest, lastText){
+  var me = getMe(), text = pickText(lv, lastText), limit = (lv.limit||180)*1000;
+  var ghosts = pickGhosts(board, me.sid, myBest);
+  APP.innerHTML =
+   '<div class="racebar"><button type="button" id="rBack">← Leave</button><div class="t grow">'+esc(lv.name)+' <span class="muted small">practice race</span></div><div class="timer" id="rTimer">0:00</div></div>'+
+   '<div style="position:relative"><div id="rTrack"></div></div>'+
+   '<div class="typebox" id="rBox"></div>'+
+   '<div class="stats"><div class="stat"><div class="v" id="sW">0</div><div class="k">WPM</div></div><div class="stat"><div class="v" id="sA">100%</div><div class="k">Accuracy</div></div>'+
+   '<div class="stat"><div class="v streak" id="sS">0</div><div class="k">Clean streak</div></div><div class="stat"><div class="v" id="sP">0%</div><div class="k">Done</div></div></div>'+
+   '<div id="rResults"></div>';
+  $("#rBack").addEventListener("click", function(){ go("#/g/"+code); });
+  var players = [{id:"me", name:me.name, racer:me.racer, me:true}];
+  ghosts.forEach(function(g,i){ players.push({id:"g"+i, name:g.name, racer:g.racer, ghost:!g.bot}); });
+  var track = Track($("#rTrack")); track.set(players);
+  var lights = Lights($("#rTrack").parentNode);
+  var typer = Typer($("#rBox"), text, {onKey:onKey, onFinish:finish});
+  var len = text.length, goAt = performance.now() + 3600, started = false, ended = false;
+  ghosts.forEach(function(g){ g.finishMs = len / (g.wpm*5/60000); g.wob = Math.random()*6; });
+  function ghostP(g, ms){ var base = ms / g.finishMs; var wob = 0.015*Math.sin(ms/700 + g.wob); return Math.max(0, Math.min(1, base + (base<0.98 ? wob : 0))); }
+  function onKey(s){
+    track.move("me", s.p, true);
+    $("#sW").textContent = Math.round(s.wpm); $("#sA").textContent = s.acc+"%"; $("#sS").textContent = s.streak; $("#sP").textContent = Math.round(s.p*100)+"%";
+    if(s.streak && s.streak % 50 === 0) toast("🔥 "+s.streak+" clean in a row!");
+  }
+  var tick = every(80, function(){
+    var now = performance.now();
+    if(!started){
+      var left = (goAt - now)/1000;
+      lights.show(Math.ceil(left));
+      if(left <= 0){ started = true; typer.arm(); lights.show(0); setTimeout(function(){ lights.remove(); }, 700); }
+      return;
+    }
+    var ms = now - goAt;
+    $("#rTimer").textContent = fmtSecs(ms) + " / " + fmtSecs(limit);
+    ghosts.forEach(function(g,i){ var p = ghostP(g, ms); track.move("g"+i, p, true); track.wpm("g"+i, g.wpm); if(p>=1 && !g.placed){ g.placed = true; } });
+    var s = typer.state(); track.wpm("me", s.wpm);
+    if(!ended && s.ms > 1500 && s.i===0 && ms > 20000) { /* idle student */ }
+    if(!ended && ms >= limit){ finish(typer.state()); }
+  });
+  var lastActivity = Date.now();
+  function finish(s){
+    if(ended) return; ended = true; typer.stop();
+    var myMs = s.done ? s.ms : Infinity;
+    var field = ghosts.map(function(g,i){ return {id:"g"+i, name:g.name, racer:g.racer, ms:g.finishMs, wpm:g.wpm}; });
+    field.push({id:"me", name:me.name, racer:me.racer, ms:myMs, wpm:s.wpm, me:true});
+    field.sort(function(a,b){ return a.ms-b.ms; });
+    var place = 0; field.forEach(function(f,i){ if(f.me) place = s.done ? i+1 : 0; });
+    track.move("me", s.p, false);
+    if(place) track.place("me", place);
+    saveResult(code, game, lv.id, s, {place:place}).then(function(res){
+      setTimeout(function(){
+        clearInterval(tick); track.stopAll();
+        showResults($("#rResults"), field, s, res, {
+          again: function(){ DB.get("best/"+code+"/"+lv.id+"/"+schoolYear()).then(function(b){ return DB.get("bestAll/"+code+"/"+lv.id+"/"+me.sid).then(function(mb){ teardown(); runPractice(code, game, lv, b||{}, mb, text); }); }); },
+          back: function(){ go("#/g/"+code); }
+        });
+      }, s.done ? 900 : 0);
+    });
+  }
+}
+function showResults(el, field, s, res, act){
+  var top = field.filter(function(f){ return isFinite(f.ms); }).slice(0,3);
+  var podium = '<div class="podium">'+[1,0,2].map(function(i){ var f = top[i]; if(!f) return '';
+    return '<div class="pod p'+(i+1)+'">'+racerSVG(f.racer)+'<div class="nm">'+esc(f.name)+(f.me?" (you)":"")+'</div><div class="sp">'+Math.round(f.wpm)+' WPM</div><div class="blk">'+(i+1)+'</div></div>'; }).join("")+'</div>';
+  var msg = !s.done ? "Time’s up — the race ended before you finished. Your practice still counts toward your progress."
+    : res.closed ? "This game is closed, so the race wasn’t saved."
+    : res.first ? '<span class="pb">First finish on this level!</span>'
+    : res.pb ? '<span class="pb">New personal best!</span>'
+    : res.yrBest ? '<span class="pb">Best this school year!</span>' : "";
+  el.innerHTML = '<div class="panel" style="text-align:center"><h2>Results</h2>'+podium+
+    '<div class="bigstat"><div class="stat"><div class="v">'+Math.round(s.wpm)+'</div><div class="k">Your WPM</div></div><div class="stat"><div class="v">'+s.acc+'%</div><div class="k">Accuracy</div></div>'+
+    '<div class="stat"><div class="v">'+fmtSecs(s.ms)+'</div><div class="k">Time</div></div><div class="stat"><div class="v">'+s.best+'</div><div class="k">Longest clean streak</div></div></div>'+
+    '<p>'+msg+'</p>'+
+    (s.acc < 92 && s.done ? '<p class="small muted">Tip: accuracy under 92% usually slows you down more than it saves. Aim for clean before fast.</p>' : '')+
+    '<div class="row" style="justify-content:center">'+(act.again?'<button class="primary big" type="button" id="resAgain">Race again</button>':'')+'<button type="button" id="resBack">Back to levels</button></div></div>';
+  if(act.again) $("#resAgain").addEventListener("click", act.again);
+  $("#resBack").addEventListener("click", act.back);
+  el.scrollIntoView({behavior:"smooth", block:"start"});
+  if((field.findIndex(function(f){ return f.me; }) < 3 && s.done) || res.pb || res.first) confetti();
+  if(act.again){ var k = function(e){ if(e.key==="Enter" && document.activeElement && document.activeElement.tagName!=="INPUT"){ document.removeEventListener("keydown",k); act.again(); } }; document.addEventListener("keydown", k); CLEANUPS.push(function(){ document.removeEventListener("keydown",k); }); }
+}
+
+/* ---------- LIVE RACE (student) ---------- */
+function viewLive(code){
+  var me = needMe(code); if(!me) return;
+  APP.innerHTML = '<div class="empty">Heading to the starting line…</div>';
+  var LS = {code:code, rid:null, joined:null, room:null, typer:null, track:null, game:null, finished:false, saved:{}};
+  AUTH.student().then(function(uid){
+    LS.uid = uid;
+    return DB.get("games/"+code);
+  }).then(function(game){
+    if(!game){ go("#/"); return; }
+    LS.game = game;
+    APP.innerHTML =
+     '<div class="racebar"><button type="button" id="lBack">← Leave</button><div class="t grow" id="lTitle">Live race</div><div class="timer" id="lTimer"></div></div>'+
+     '<div id="lMsg" class="panel" style="text-align:center;padding:12px"></div>'+
+     '<div style="position:relative"><div id="lTrack"></div></div>'+
+     '<div class="typebox locked" id="lBox"><span class="muted">The passage appears when the race starts.</span></div>'+
+     '<div class="stats"><div class="stat"><div class="v" id="sW">0</div><div class="k">WPM</div></div><div class="stat"><div class="v" id="sA">100%</div><div class="k">Accuracy</div></div>'+
+     '<div class="stat"><div class="v streak" id="sS">0</div><div class="k">Clean streak</div></div><div class="stat"><div class="v" id="sP">0%</div><div class="k">Done</div></div></div>'+
+     '<div id="lResults"></div>';
+    $("#lBack").addEventListener("click", function(){ leave(); go("#/g/"+code); });
+    LS.track = Track($("#lTrack"));
+    sub("live/"+code, function(L){ onPointer(L); });
+  });
+  function leave(){ if(LS.rid && LS.joined===LS.rid && LS.room && LS.room.meta && LS.room.meta.state==="lobby") DB.remove("rooms/"+code+"/"+LS.rid+"/players/"+LS.uid); }
+  CLEANUPS.push(leave);
+  function msg(t){ $("#lMsg").innerHTML = t; }
+  function onPointer(L){
+    if(!liveFresh(L)){ msg("No live race is open right now. Stay here — you’ll join automatically when your teacher opens one."); LS.track.set([]); return; }
+    if(L.rid !== LS.rid){
+      LS.rid = L.rid; LS.room = null; LS.finished = false; LS.typer = null; LS.lights && LS.lights.remove(); LS.lights = null;
+      $("#lResults").innerHTML = ""; $("#lBox").className = "typebox locked"; $("#lBox").innerHTML = '<span class="muted">The passage appears when the race starts.</span>';
+      if(LS.roomUnsub) LS.roomUnsub();
+      LS.roomUnsub = DB.on("rooms/"+code+"/"+L.rid, onRoom); SUBS.push(LS.roomUnsub);
+    }
+  }
+  function myName(){ var m=getMe(); return {name:m.name, racer:m.racer, sid:m.sid, sec:((m.secs||{})[code])||"", p:0, wpm:0}; }
+  function onRoom(room){
+    LS.room = room;
+    if(!room || !room.meta){ return; }
+    var meta = room.meta, players = room.players || {};
+    var lv = (LS.game.levels||{})[meta.lid] || {name:"Live race"};
+    $("#lTitle").textContent = "Live race · " + (lv.name||"");
+    var inRoom = !!players[LS.uid];
+    if(meta.state==="lobby" && !inRoom && LS.joined !== LS.rid){
+      LS.joined = LS.rid; DB.set("rooms/"+code+"/"+LS.rid+"/players/"+LS.uid, myName()); return;
+    }
+    var list = Object.keys(players).map(function(k){ var p=players[k]; return {id:k, name:p.name, racer:p.racer, me:k===LS.uid, p:p.p, wpm:p.wpm, done:p.done}; });
+    list.sort(function(a,b){ return (b.me?1:0)-(a.me?1:0) || a.name.localeCompare(b.name); });
+    LS.track.set(list);
+    var running = meta.state==="run" && DB.now() >= (meta.startAt||0);
+    var fin = list.filter(function(p){ return p.done; }).sort(function(a,b){ return a.done-b.done; });
+    list.forEach(function(p){ if(!p.me || LS.finished){ LS.track.move(p.id, p.p, running && !p.done); LS.track.wpm(p.id, p.wpm); } });
+    fin.forEach(function(p,i){ LS.track.place(p.id, i+1); });
+    if(meta.state==="lobby"){
+      msg('<b>You’re on the starting line.</b> '+list.length+' racer'+(list.length===1?"":"s")+' so far. Waiting for your teacher to start…');
+      return;
+    }
+    if(!inRoom){ msg("This race started before you got here. You’ll be in the next one — stay on this page."); return; }
+    if(meta.state==="run" && !LS.typer){ startRace(meta, lv); }
+    if(meta.state==="done"){ endRace(list, fin, lv); }
+  }
+  function startRace(meta, lv){
+    msg("Type the passage as fast and clean as you can!");
+    LS.typer = Typer($("#lBox"), meta.text, {onKey:onKey, onFinish:onFinish});
+    LS.lights = Lights($("#lTrack").parentNode);
+    var lastSent = 0, limit = (meta.limit||180)*1000;
+    LS.tick = every(100, function(){
+      var left = (meta.startAt - DB.now())/1000;
+      if(left > 0){ LS.lights.show(Math.ceil(left)); return; }
+      if(!LS.armed){ LS.armed = true; LS.typer.arm(); LS.lights.show(0); setTimeout(function(){ LS.lights && LS.lights.remove(); LS.lights=null; }, 700); }
+      var ms = DB.now() - meta.startAt;
+      $("#lTimer").textContent = fmtSecs(ms) + " / " + fmtSecs(limit);
+      var s = LS.typer.state();
+      if(!LS.finished && Date.now() - lastSent > 450){ lastSent = Date.now(); DB.update("rooms/"+code+"/"+LS.rid+"/players/"+LS.uid, {p:Math.round(s.p*1000)/1000, wpm:Math.round(s.wpm)}); }
+    });
+    LS.armed = false;
+  }
+  function onKey(s){
+    LS.track.move(LS.uid, s.p, true); LS.track.wpm(LS.uid, s.wpm);
+    $("#sW").textContent = Math.round(s.wpm); $("#sA").textContent = s.acc+"%"; $("#sS").textContent = s.streak; $("#sP").textContent = Math.round(s.p*100)+"%";
+  }
+  function onFinish(s){
+    LS.finished = true; LS.track.move(LS.uid, 1, false);
+    var room = LS.room, ps = (room && room.players) || {}, ahead = 0, ms = Math.round(s.ms);
+    Object.keys(ps).forEach(function(k){ if(k!==LS.uid && ps[k].done && ps[k].done < ms) ahead++; });
+    LS.place = ahead + 1;
+    DB.update("rooms/"+code+"/"+LS.rid+"/players/"+LS.uid, {p:1, wpm:Math.round(s.wpm), acc:s.acc, done:ms});
+    msg("<b>Finished!</b> Waiting for the rest of the racers…");
+    LS.final = s;
+    if(!LS.saved[LS.rid]){ LS.saved[LS.rid] = true; LS.res = saveResult(code, LS.game, LS.room.meta.lid, s, {live:true, place:LS.place}); }
+  }
+  function endRace(list, fin, lv){
+    if(LS.ended === LS.rid) return; LS.ended = LS.rid;
+    if(LS.tick) clearInterval(LS.tick);
+    var s = LS.final;
+    if(LS.typer && !LS.finished){ s = LS.typer.state(); LS.typer.stop(); if(!LS.saved[LS.rid] && s.i>0){ LS.saved[LS.rid]=true; LS.res = saveResult(code, LS.game, LS.room.meta.lid, s, {live:true}); } }
+    LS.track.stopAll();
+    var field = fin.map(function(p){ return {name:p.name, racer:p.racer, ms:p.done, wpm:p.wpm, me:p.me}; });
+    list.filter(function(p){ return !p.done; }).forEach(function(p){ field.push({name:p.name, racer:p.racer, ms:Infinity, wpm:p.wpm, me:p.me}); });
+    msg("Race over! Stay on this page for the next race.");
+    $("#lTimer").textContent = "";
+    (LS.res || Promise.resolve({})).then(function(res){
+      showResults($("#lResults"), field, s || {wpm:0, acc:100, ms:0, best:0, done:false}, res||{}, {back:function(){ go("#/g/"+code); }});
+    });
+  }
+}
+
+/* ==========================================================================
+   TEACHER SIDE: sign-in, my games, game editor, students, live race host
+   ========================================================================== */
+var STARTERS = {
+  homerow: {name:"Warm-up: home row", kind:"words", n:25, text:"as sad dad lad fall glad flask salad all ask alas add lass dash flash had has jag gash half sash lads asks falls"},
+  common: {name:"100 common words", kind:"words", n:30, text:"the of and to in is you that it he was for on are as with his they at be this have from or one had by word but not what all were we when your can said there use an each which she do how their if will up other about out many then them these so some her would make like him into time has look two more write go see number no way could people my than first water been call who oil its now find long down day did get come made may part"},
+  rjlife: {name:"Paragraphs: school life", kind:"para", text:
+"The bake sale for the robotics club starts at 7:30 before first block. We need three more volunteers to run the table, and every cookie costs one dollar. Bring small bills so we can make change quickly.\n\n"+
+"Our soccer team leaves for the away game at 2:45. The bus waits in the north lot, so pack your cleats, a water bottle, and your jersey the night before.\n\n"+
+"To study for the biology test, I made twenty flash cards and quizzed myself every night for a week. On Thursday I asked a friend to test me on the ones I kept missing.\n\n"+
+"My phone plan costs forty-five dollars a month. If I switch to the family plan, my share drops to twenty-five, which saves two hundred forty dollars a year.\n\n"+
+"Service hours count most when you show up on time. Sign in at the front desk, ask where you are needed, and stay until the job is done.\n\n"+
+"Snow is in the forecast for Monday, so check your email early. If school starts late, the schedule moves to the late-start bells and lunch is shorter."},
+  symbols: {name:"Numbers and symbols", kind:"para", text:
+"Meet in room 214 at 3:15 p.m. and bring $12.50 for the field trip.\n"+
+"The recipe needs 1/2 cup of sugar, 2 eggs, and 350 degrees for 25 minutes.\n"+
+"Call (303) 555-0142 or email the coach before 8:00 a.m. on 11/20.\n"+
+"Our team won 3-1, moved to 9-2 on the season, and climbed to #4 in the state.\n"+
+"Lab 7: mass = 42.6 g, volume = 18.0 mL, so density = 2.37 g/mL (about 2.4)."}
+};
+
+function newCode(){
+  var A = "ABCDEFGHJKMNPQRSTUVWXYZ23456789", s = "";
+  for(var i=0;i<5;i++) s += A[Math.floor(Math.random()*A.length)];
+  return s;
+}
+
+/* ---------- sign-in & dashboard ---------- */
+function viewTeach(){
+  APP.innerHTML = '<div class="empty">Loading…</div>';
+  var unsubbed = false;
+  AUTH.onTeacher(function(t){
+    if(unsubbed || !/^#\/teach\/?$/.test(location.hash)) return;
+    SUBS.splice(0).forEach(function(u){ try{ u(); }catch(e){} });
+    if(!t) teachSignIn();
+    else if(!t.verified) teachVerify(t);
+    else teachHome(t);
+  });
+  CLEANUPS.push(function(){ unsubbed = true; });
+}
+function teachSignIn(){
+  APP.innerHTML =
+   '<div class="split"><section class="panel"><div class="card-title">Teacher sign-in</div>'+
+    '<label class="f" for="tE">RJ email</label><input id="tE" type="email" placeholder="you@regisjesuit.com" autocomplete="username">'+
+    '<label class="f" for="tP">Password</label><input id="tP" type="password" autocomplete="current-password">'+
+    '<div class="row" style="margin-top:14px"><button class="primary" id="tIn" type="button">Sign in</button><button type="button" class="ghost" id="tForgot">Forgot password?</button></div>'+
+    '<div class="err" id="tErr" role="alert"></div></section>'+
+   '<section class="panel"><div class="card-title">New here? Make a teacher account</div>'+
+    '<p class="muted small">Use your @regisjesuit.com email. We’ll send one email to confirm it’s you. This is a separate password from your school login.</p>'+
+    '<label class="f" for="nN">Name students see</label><input id="nN" type="text" placeholder="Mr. Stearman" maxlength="40">'+
+    '<label class="f" for="nE">RJ email</label><input id="nE" type="email" placeholder="you@regisjesuit.com" autocomplete="email">'+
+    '<label class="f" for="nP">Choose a password</label><input id="nP" type="password" autocomplete="new-password" placeholder="At least 6 characters">'+
+    '<div class="row" style="margin-top:14px"><button class="primary" id="nGo" type="button">Create account</button></div>'+
+    '<div class="err" id="nErr" role="alert"></div></section></div>';
+  $("#tIn").addEventListener("click", function(){
+    var e=$("#tE").value.trim(), p=$("#tP").value; $("#tErr").textContent="";
+    if(!e||!p){ $("#tErr").textContent="Type your email and password."; return; }
+    AUTH.signIn(e,p).catch(function(x){ $("#tErr").textContent = x.message; });
+  });
+  $("#tP").addEventListener("keydown", function(e){ if(e.key==="Enter") $("#tIn").click(); });
+  $("#tForgot").addEventListener("click", function(){
+    var e=$("#tE").value.trim(); if(!e){ $("#tErr").textContent="Type your email first, then click Forgot password."; return; }
+    AUTH.resetPassword(e).then(function(){ $("#tErr").innerHTML = '<span class="ok">Check your inbox for a reset link.</span>'; }, function(x){ $("#tErr").textContent = x.message; });
+  });
+  $("#nGo").addEventListener("click", function(){
+    var n=$("#nN").value.trim(), e=$("#nE").value.trim().toLowerCase(), p=$("#nP").value; $("#nErr").textContent="";
+    if(!n){ $("#nErr").textContent="Type the name students see, like Ms. Garcia."; return; }
+    if(!TEACHER_OK.test(e)){ $("#nErr").textContent="Use your @regisjesuit.com email."; return; }
+    if(p.length<6){ $("#nErr").textContent="Use at least 6 characters for the password."; return; }
+    AUTH.signUp(e,p,n).catch(function(x){ $("#nErr").textContent = x.message; });
+  });
+}
+function teachVerify(t){
+  APP.innerHTML = '<section class="panel" style="max-width:640px"><div class="card-title">One more step: confirm your email</div>'+
+    '<p>We sent a link to <b>'+esc(t.email)+'</b>. Open it in Outlook and click the link. Check Junk if you don’t see it.</p>'+
+    '<div class="row"><button class="primary" id="vDone" type="button">I clicked the link</button><button type="button" id="vAgain">Send it again</button><button type="button" class="ghost" id="vOut">Sign out</button></div>'+
+    '<div class="err" id="vErr" role="alert"></div></section>';
+  $("#vDone").addEventListener("click", function(){ AUTH.refresh().then(function(s){ if(s && !s.verified) $("#vErr").textContent = "Not confirmed yet. Click the link in the email, then try again."; }); });
+  $("#vAgain").addEventListener("click", function(){ AUTH.sendVerify().then(function(){ $("#vErr").innerHTML = '<span class="ok">Sent again.</span>'; }, function(x){ $("#vErr").textContent=x.message; }); });
+  $("#vOut").addEventListener("click", function(){ AUTH.signOut(); });
+}
+function teachHome(t){
+  if(!TEACHER_OK.test(t.email)){
+    APP.innerHTML = '<div class="panel"><h2>Use your RJ email</h2><p>Teacher accounts need an @regisjesuit.com address.</p><button type="button" id="o">Sign out</button></div>';
+    $("#o").addEventListener("click", function(){ AUTH.signOut(); }); return;
+  }
+  APP.innerHTML =
+   '<div class="row"><div class="grow"><h2 style="margin:0">'+esc(t.name)+'’s games</h2><div class="muted small">'+esc(t.email)+'</div></div>'+
+   '<button type="button" class="ghost" id="tOut">Sign out</button></div>'+
+   '<div class="panel"><div class="card-title">Make a new game</div><p class="muted small">One game per class or unit is plenty. Students join with the game’s code; inside it you add levels.</p>'+
+   '<div class="row"><input id="ngT" type="text" maxlength="60" placeholder="e.g. Spanish 2 vocab races" style="max-width:420px"><button class="primary" id="ngGo" type="button">Create game</button></div><div class="err" id="ngErr"></div></div>'+
+   '<h3>Your games</h3><div class="gamelist" id="gl"><div class="empty">No games yet.</div></div>';
+  $("#tOut").addEventListener("click", function(){ AUTH.signOut(); });
+  $("#ngT").addEventListener("keydown", function(e){ if(e.key==="Enter") $("#ngGo").click(); });
+  $("#ngGo").addEventListener("click", function(){
+    var title = $("#ngT").value.trim(); if(!title){ $("#ngErr").textContent = "Give the game a name."; return; }
+    var btn = this; btn.disabled = true;
+    (function tryCode(n){
+      var code = newCode();
+      DB.get("games/"+code).then(function(g){
+        if(g && n<6) return tryCode(n+1);
+        var now = DB.now();
+        var game = {title:title, owner:t.uid, ownerName:t.name, ownerEmail:t.email, created:now, updated:now, open:true, sections:[],
+          levels:{L1:{name:STARTERS.common.name, kind:"words", n:30, limit:120, order:0, text:STARTERS.common.text}}};
+        return DB.set("games/"+code, game).then(function(){ return DB.set("teacherGames/"+t.uid+"/"+code, {title:title, created:now}); })
+          .then(function(){ go("#/edit/"+code); });
+      }).catch(function(e){ btn.disabled=false; $("#ngErr").textContent = e.message; });
+    })(0);
+  });
+  sub("teacherGames/"+t.uid, function(list){
+    var keys = Object.keys(list||{}).sort(function(a,b){ return (list[b].created||0)-(list[a].created||0); });
+    var gl = $("#gl"); if(!gl) return;
+    if(!keys.length){ gl.innerHTML = '<div class="empty">No games yet. Make one above.</div>'; return; }
+    gl.innerHTML = "";
+    keys.forEach(function(k){
+      var b = document.createElement("button"); b.type="button"; b.className="gcard";
+      b.innerHTML = '<div class="gt">'+esc(list[k].title)+'</div><div class="muted small">Code <span class="code">'+esc(k)+'</span> · made '+fmtDate(list[k].created)+'</div>';
+      b.addEventListener("click", function(){ go("#/edit/"+k); }); gl.appendChild(b);
+    });
+  });
+}
+
+/* ---------- GAME EDITOR ---------- */
+function viewEdit(code, tab){
+  APP.innerHTML = '<div class="empty">Loading…</div>';
+  var done = false;
+  AUTH.onTeacher(function(t){
+    if(done) return;
+    if(!t || !t.verified){ go("#/teach"); return; }
+    done = true;
+    DB.get("games/"+code).then(function(game){
+      if(!game){ APP.innerHTML = '<div class="panel"><h2>Game not found</h2><button onclick="go(\'#/teach\')">Back to my games</button></div>'; return; }
+      if(game.owner !== t.uid){ APP.innerHTML = '<div class="panel"><h2>Not your game</h2><p>Only the teacher who made a game can edit it.</p><button onclick="go(\'#/teach\')">Back</button></div>'; return; }
+      buildEditor(code, game, t, tab||"levels");
+    });
+  });
+}
+function buildEditor(code, game, t, tab){
+  var ED = {code:code, game:game, tab:tab, dirty:false};
+  APP.innerHTML =
+   '<div class="row"><button type="button" id="eBack">← My games</button><div class="grow"></div><span class="savestate" id="eSave">Saved</span></div>'+
+   '<label class="f" for="eTitle">Game name</label><input id="eTitle" type="text" maxlength="60">'+
+   '<div class="sharebox" style="margin-top:14px"><div><div class="tiny muted">GAME CODE</div><div class="bigcode code">'+esc(code)+'</div></div>'+
+    '<div class="grow"><div class="small">Students go to <b>'+esc(baseURL().replace(/^https?:\/\//,""))+'</b> and type the code, or use this link:</div>'+
+    '<div class="row" style="margin-top:6px"><input type="text" readonly value="'+esc(joinURL(code))+'" id="eLink" style="max-width:420px"><button type="button" id="eCopy">Copy link</button></div></div>'+
+    '<button class="primary big" type="button" id="eHost">🏁 Host a live race</button></div>'+
+   '<div class="tabs" role="tablist"><button class="tab" data-t="levels">Levels</button><button class="tab" data-t="sections">Sections</button><button class="tab" data-t="students">Students</button><button class="tab" data-t="boards">Leaderboards</button><button class="tab" data-t="settings">Settings</button></div>'+
+   '<div id="eBody"></div>';
+  $("#eTitle").value = game.title;
+  $("#eBack").addEventListener("click", function(){ go("#/teach"); });
+  $("#eCopy").addEventListener("click", function(){ copy(joinURL(code)); });
+  $("#eHost").addEventListener("click", function(){ go("#/host/"+code); });
+  $("#eTitle").addEventListener("input", function(){ game.title = this.value; save(); });
+  $$(".tab").forEach(function(b){ b.addEventListener("click", function(){ ED.tab = b.dataset.t; render(); }); });
+  var saveT;
+  function save(){
+    $("#eSave").textContent = "Saving…"; clearTimeout(saveT);
+    saveT = setTimeout(function(){
+      game.updated = DB.now();
+      var clean = JSON.parse(JSON.stringify(game));
+      Object.keys(clean.levels||{}).forEach(function(k){ delete clean.levels[k].id; });
+      DB.set("games/"+code, clean).then(function(){
+        $("#eSave") && ($("#eSave").textContent = "Saved");
+        return DB.update("teacherGames/"+t.uid+"/"+code, {title:game.title});
+      }).catch(function(e){ $("#eSave") && ($("#eSave").textContent = "Not saved: "+e.message); });
+    }, 700);
+  }
+  CLEANUPS.push(function(){ clearTimeout(saveT); });
+  ED.save = save;
+  function render(){
+    $$(".tab").forEach(function(b){ b.setAttribute("aria-selected", b.dataset.t===ED.tab?"true":"false"); });
+    var body = $("#eBody");
+    if(ED.tab==="levels") edLevels(body, game, save);
+    else if(ED.tab==="sections") edSections(body, game, save);
+    else if(ED.tab==="students") edStudents(body, code, game);
+    else if(ED.tab==="boards") Boards(body, code, game, {teacher:true});
+    else edSettings(body, code, game, t, save);
+  }
+  render();
+}
+function edLevels(body, game, save){
+  var levels = levelList(game);
+  body.innerHTML = '<p class="muted small" style="margin-top:12px">Each level gets its own leaderboard. Paste paragraphs (a blank line between each one) or a word list. Every race picks one paragraph, or a fresh mix of words, at random.</p><div id="lvList"></div>'+
+   '<div class="row" style="margin-top:6px"><button class="primary" type="button" id="lvAdd">+ Add a level</button><span class="muted small">or start from:</span>'+
+   '<select id="lvStarter" style="width:auto"><option value="">Pick a starter…</option>'+Object.keys(STARTERS).map(function(k){ return '<option value="'+k+'">'+esc(STARTERS[k].name)+'</option>'; }).join("")+'</select></div>';
+  var list = $("#lvList");
+  function reorder(){ levelList(game).forEach(function(l,i){ game.levels[l.id].order = i; }); }
+  function add(src){
+    var id = "L"+rid().slice(-6), n = levelList(game).length;
+    game.levels = game.levels||{};
+    game.levels[id] = {name:src.name, kind:src.kind, text:src.text, n:src.n||25, limit:src.kind==="words"?120:180, order:n};
+    save(); edLevels(body, game, save);
+    setTimeout(function(){ var el = $('[data-lv="'+id+'"] input'); if(el){ el.focus(); el.select(); el.scrollIntoView({block:"center"}); } }, 30);
+  }
+  $("#lvAdd").addEventListener("click", function(){ add({name:"New level", kind:"para", text:""}); });
+  $("#lvStarter").addEventListener("change", function(){ if(this.value) add(STARTERS[this.value]); });
+  levels.forEach(function(lv, i){
+    var d = document.createElement("div"); d.className = "lvled"; d.dataset.lv = lv.id;
+    d.innerHTML =
+     '<div class="row"><b>Level '+(i+1)+'</b><input type="text" class="grow" maxlength="50" style="max-width:360px" aria-label="Level name">'+
+     '<div class="seg" role="group" aria-label="Kind"><button type="button" data-k="para">Paragraphs</button><button type="button" data-k="words">Word list</button></div>'+
+     '<div class="grow"></div><button type="button" class="x" data-m="-1" title="Move up"'+(i===0?" disabled":"")+'>↑</button><button type="button" class="x" data-m="1" title="Move down"'+(i===levels.length-1?" disabled":"")+'>↓</button>'+
+     '<button type="button" class="x danger" data-del>Delete</button></div>'+
+     '<textarea aria-label="Level text" style="margin-top:10px"></textarea>'+
+     '<div class="row" style="margin-top:8px"><span class="hint grow" data-count></span>'+
+     '<label class="small" data-nwrap>Words per race <input type="number" min="5" max="120" style="width:80px" data-n></label>'+
+     '<label class="small">Time limit <select data-lim style="width:auto"><option value="60">1 min</option><option value="120">2 min</option><option value="180">3 min</option><option value="300">5 min</option></select></label></div>';
+    list.appendChild(d);
+    var nm = $("input[type=text]", d), ta = $("textarea", d), nIn = $("[data-n]", d), lim = $("[data-lim]", d);
+    nm.value = lv.name||""; ta.value = lv.text||""; nIn.value = lv.n||25; lim.value = String(lv.limit||180);
+    function paint(){
+      $$(".seg button", d).forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.k===(lv.kind||"para")?"true":"false"); });
+      $("[data-nwrap]", d).style.display = lv.kind==="words" ? "" : "none";
+      ta.placeholder = lv.kind==="words" ? "Paste words separated by spaces, commas, or new lines" : "Paste paragraphs. Put a blank line between paragraphs.";
+      var items = parseItems(lv), c = $("[data-count]", d);
+      if(!items.length){ c.textContent = "Empty: students can’t race this level until you add text."; c.style.color = "var(--warn)"; return; }
+      c.style.color = "";
+      if(lv.kind==="words") c.textContent = items.length+" words in the list. Each race uses "+(lv.n||25)+" of them.";
+      else { var avg = Math.round(items.reduce(function(a,b){ return a+b.length; },0)/items.length);
+        c.textContent = items.length+" paragraph"+(items.length===1?"":"s")+" · about "+Math.round(avg/5)+" words each (about "+Math.max(1,Math.round(avg/5/35*60))+" seconds at 35 WPM)"; }
+    }
+    paint();
+    nm.addEventListener("input", function(){ lv.name = this.value; game.levels[lv.id].name = this.value; save(); });
+    ta.addEventListener("input", function(){ lv.text = this.value.slice(0,30000); game.levels[lv.id].text = lv.text; paint(); save(); });
+    nIn.addEventListener("input", function(){ var v = Math.max(5,Math.min(120,parseInt(this.value,10)||25)); lv.n = v; game.levels[lv.id].n = v; paint(); save(); });
+    lim.addEventListener("change", function(){ game.levels[lv.id].limit = parseInt(this.value,10); save(); });
+    $$(".seg button", d).forEach(function(b){ b.addEventListener("click", function(){ lv.kind = b.dataset.k; game.levels[lv.id].kind = lv.kind; paint(); save(); }); });
+    $$("[data-m]", d).forEach(function(b){ b.addEventListener("click", function(){
+      var arr = levelList(game), j = arr.findIndex(function(x){ return x.id===lv.id; }), k = j + parseInt(b.dataset.m,10);
+      if(k<0||k>=arr.length) return; var tmp = arr[j]; arr[j] = arr[k]; arr[k] = tmp;
+      arr.forEach(function(x,i2){ game.levels[x.id].order = i2; }); save(); edLevels(body, game, save); }); });
+    $("[data-del]", d).addEventListener("click", function(){
+      var b = this; if(!b.dataset.armed){ b.dataset.armed = "1"; b.textContent = "Click again to delete"; return; }
+      delete game.levels[lv.id]; reorder(); save(); edLevels(body, game, save); });
+  });
+  if(!levels.length) list.innerHTML = '<div class="empty" style="margin-top:12px">No levels yet. Add one below.</div>';
+}
+function edSections(body, game, save){
+  body.innerHTML = '<div class="panel"><h2>Class sections</h2><p class="muted small">Optional. List your sections, one per line (e.g. Block 2, Block 5). Students pick theirs when they join, and every leaderboard can then show one section or all of them.</p>'+
+    '<textarea id="secTa" style="min-height:120px" placeholder="Block 2&#10;Block 5"></textarea><div class="hint" id="secN"></div></div>';
+  var ta = $("#secTa"); ta.value = (game.sections||[]).join("\n");
+  function n(){ var s = ta.value.split("\n").map(clean1).filter(Boolean); $("#secN").textContent = s.length ? s.length+" section"+(s.length===1?"":"s") : "No sections: everyone is on one board."; return s; }
+  n();
+  ta.addEventListener("input", function(){ game.sections = n().slice(0,20).map(function(s){ return s.slice(0,30); }); save(); });
+}
+function edStudents(body, code, game){
+  body.innerHTML = '<div class="empty" style="margin-top:14px">Loading students…</div>';
+  Promise.all([DB.get("roster/"+code), DB.get("results/"+code)]).then(function(r){
+    var roster = r[0]||{}, results = r[1]||{}, levels = levelList(game), secs = (game.sections||[]).filter(Boolean);
+    var sids = Object.keys(roster);
+    if(!sids.length){ body.innerHTML = '<div class="empty" style="margin-top:14px">No students yet. Share the code <b class="code">'+esc(code)+'</b> and they’ll appear here after they join.</div>'; return; }
+    var st = edStudents.st = edStudents.st || {sec:""};
+    var rows = sids.map(function(sid){
+      var R = Object.keys(results[sid]||{}).map(function(k){ return results[sid][k]; }).sort(function(a,b){ return a.at-b.at; });
+      var o = {sid:sid, r:roster[sid], races:R.length, R:R, best:{}};
+      levels.forEach(function(l){ var w = R.filter(function(x){ return x.lid===l.id && x.fin; }).map(function(x){ return x.wpm; }); o.best[l.id] = w.length ? Math.round(Math.max.apply(null,w)) : null; });
+      var fw = R.filter(function(x){ return x.fin; }).map(function(x){ return Math.round(x.wpm); });
+      o.spark = fw.slice(-15); o.last = R.length ? R[R.length-1].at : roster[sid].last;
+      return o;
+    }).filter(function(o){ return !st.sec || o.r.sec===st.sec; })
+      .sort(function(a,b){ return String(a.r.name).localeCompare(String(b.r.name)); });
+    var html = '<div class="row" style="margin:14px 0 8px"><div class="grow small muted">'+rows.length+' student'+(rows.length===1?"":"s")+'. Emails are visible only to you.</div>'+
+      (secs.length?'<select id="sSec" style="width:auto"><option value="">All sections</option>'+secs.map(function(s){ return '<option>'+esc(s)+'</option>'; }).join("")+'</select>':'')+
+      '<button type="button" id="sCsv">Download all races (CSV)</button></div>'+
+      '<div class="tablewrap"><table class="t"><thead><tr><th>Student</th><th>Email</th>'+(secs.length?'<th>Section</th>':'')+'<th>Races</th>'+
+      levels.map(function(l){ return '<th title="Best WPM">'+esc(l.name)+'</th>'; }).join("")+'<th>Trend (WPM)</th><th>Last race</th></tr></thead><tbody>';
+    rows.forEach(function(o){
+      html += '<tr><td><b>'+esc(o.r.name)+'</b>'+(o.r.grad?' <span class="tiny muted">’'+String(o.r.grad).slice(2)+'</span>':'')+'</td><td class="small">'+esc(o.r.email)+'</td>'+(secs.length?'<td>'+esc(o.r.sec||"")+'</td>':'')+
+        '<td class="num">'+o.races+'</td>'+levels.map(function(l){ return '<td class="num">'+(o.best[l.id]==null?'<span class="muted">–</span>':o.best[l.id])+'</td>'; }).join("")+
+        '<td>'+sparkline(o.spark, 110, 28)+'</td><td class="small muted">'+fmtDate(o.last)+'</td></tr>';
+    });
+    body.innerHTML = html + '</tbody></table></div>';
+    if($("#sSec")){ $("#sSec").value = st.sec; $("#sSec").addEventListener("change", function(){ st.sec = this.value; edStudents(body, code, game); }); }
+    $("#sCsv").addEventListener("click", function(){
+      var names = {}; levels.forEach(function(l){ names[l.id]=l.name; });
+      var lines = [["Date","Time","Student","Email","Section","Level","WPM","Accuracy %","Seconds","Finished","Race type","Place"]];
+      Object.keys(results).forEach(function(sid){ var R = results[sid], ro = roster[sid]||{};
+        Object.keys(R).forEach(function(k){ var x = R[k], d = new Date(x.at);
+          lines.push([d.toLocaleDateString(), d.toLocaleTimeString(), ro.name||"", ro.email||"", x.sec||ro.sec||"", names[x.lid]||"(deleted level)", Math.round(x.wpm), x.acc, Math.round(x.ms/1000), x.fin?"yes":"no", x.live?"live":"practice", x.place||""]); }); });
+      lines = [lines[0]].concat(lines.slice(1).sort(function(a,b){ return new Date(a[0]+" "+a[1]) - new Date(b[0]+" "+b[1]); }));
+      var csv = lines.map(function(r){ return r.map(function(c){ c = String(c); return /[",\n]/.test(c) ? '"'+c.replace(/"/g,'""')+'"' : c; }).join(","); }).join("\r\n");
+      var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob(["﻿"+csv],{type:"text/csv"}));
+      a.download = (game.title||"typing-rally").replace(/[^\w-]+/g,"-")+"-races.csv"; document.body.appendChild(a); a.click(); a.remove();
+    });
+  });
+}
+function edSettings(body, code, game, t, save){
+  body.innerHTML = '<div class="panel"><h2>Open or closed</h2><label class="switch"><input type="checkbox" id="stOpen"> Game is open: students can join and their races count</label>'+
+    '<p class="hint">Close a game at the end of a unit or year to freeze its boards. Students can still look at them.</p></div>'+
+    '<div class="panel"><h2>New school year</h2><p class="small">Nothing to do: on July 1 every level starts a fresh yearly board automatically. Last year’s boards stay under the year menu, and the all-time board keeps going.</p></div>'+
+    '<div class="panel"><h2>Delete this game</h2><p class="small">Removes the game, its levels, every student’s races and all boards. This can’t be undone. Download the CSV from Students first if you want a record.</p>'+
+    '<button type="button" class="danger" id="stDel">Delete game</button><div class="err" id="stErr"></div></div>';
+  $("#stOpen").checked = !!game.open;
+  $("#stOpen").addEventListener("change", function(){ game.open = this.checked; save(); });
+  $("#stDel").addEventListener("click", function(){
+    var b = this; if(!b.dataset.armed){ b.dataset.armed="1"; b.textContent = "Click again to delete “"+game.title+"” forever"; return; }
+    b.disabled = true;
+    Promise.all(["live","rooms","results","best","bestAll","roster"].map(function(p){ return DB.remove(p+"/"+code).catch(function(){}); }))
+      .then(function(){ return DB.remove("games/"+code); }).then(function(){ return DB.remove("teacherGames/"+t.uid+"/"+code); })
+      .then(function(){ go("#/teach"); }).catch(function(e){ $("#stErr").textContent = e.message; b.disabled=false; });
+  });
+}
+
+/* ---------- LIVE RACE HOST (projector screen) ---------- */
+function viewHost(code){
+  APP.innerHTML = '<div class="empty">Loading…</div>';
+  var done = false;
+  AUTH.onTeacher(function(t){
+    if(done) return;
+    if(!t || !t.verified){ go("#/teach"); return; }
+    done = true;
+    DB.get("games/"+code).then(function(game){
+      if(!game || game.owner!==t.uid){ go("#/teach"); return; }
+      runHost(code, game, t);
+    });
+  });
+}
+function runHost(code, game, t){
+  var H = {rid:null, room:null, lid:null, ended:false};
+  var levels = levelList(game).filter(function(l){ return parseItems(l).length; });
+  APP.innerHTML =
+   '<div class="row"><button type="button" id="hBack">← Back to the game</button><div class="grow"></div><span class="muted small">Keep this page open on the projector while you race.</span></div>'+
+   '<div class="hostcode"><div><div class="muted">Go to</div><div class="url">'+esc(baseURL().replace(/^https?:\/\//,""))+'</div></div><div><div class="muted">Game code</div><div class="bigcode code">'+esc(code)+'</div></div></div>'+
+   '<div class="panel" id="hCtl"></div><div style="position:relative"><div id="hTrack"></div></div><div id="hRes"></div>';
+  $("#hBack").addEventListener("click", function(){ closeLobby(false).then(function(){ go("#/edit/"+code); }); });
+  var track = Track($("#hTrack"), {size:"big"});
+  every(20000, function(){ if(H.rid) DB.update("live/"+code, {hb:DB.now()}); });
+  function ctlPick(){
+    $("#hCtl").innerHTML = levels.length ?
+      '<div class="row"><label for="hLvl"><b>Level</b></label><select id="hLvl" style="width:auto">'+levels.map(function(l){ return '<option value="'+esc(l.id)+'">'+esc(l.name)+'</option>'; }).join("")+'</select>'+
+      '<button class="primary big" type="button" id="hOpen">Open the starting line</button></div><p class="hint">Students on the game page see a “Join the race” button as soon as you open it.</p>'
+      : '<p>Add text to at least one level before hosting a race.</p>';
+    if(H.lid && $("#hLvl")) $("#hLvl").value = H.lid;
+    if($("#hOpen")) $("#hOpen").addEventListener("click", function(){ openLobby($("#hLvl").value); });
+  }
+  function openLobby(lid){
+    H.lid = lid; H.ended = false; $("#hRes").innerHTML = "";
+    var lv = game.levels[lid], old = H.rid, newRid = rid(), now = DB.now();
+    var meta = {lid:lid, text:pickText(lv, H.lastText), state:"lobby", created:now, limit:lv.limit||180, host:t.uid};
+    H.lastText = meta.text;
+    return DB.set("rooms/"+code+"/"+newRid+"/meta", meta).then(function(){
+      return DB.set("live/"+code, {rid:newRid, lid:lid, name:lv.name||"", state:"lobby", hb:now});
+    }).then(function(){
+      if(old) DB.remove("rooms/"+code+"/"+old);
+      H.rid = newRid;
+      if(H.unsub) H.unsub();
+      H.unsub = DB.on("rooms/"+code+"/"+newRid, onRoom); SUBS.push(H.unsub);
+    }).catch(function(e){ toast(e.message); });
+  }
+  function closeLobby(full){
+    var jobs = [DB.remove("live/"+code)];
+    if(H.rid) jobs.push(DB.remove("rooms/"+code+"/"+H.rid));
+    H.rid = null; if(H.unsub) H.unsub();
+    return Promise.all(jobs).catch(function(){}).then(function(){ if(full){ track.set([]); $("#hRes").innerHTML=""; ctlPick(); } });
+  }
+  CLEANUPS.push(function(){ if(H.rid){ DB.remove("live/"+code); } });
+  function onRoom(room){
+    if(!room || !room.meta) return;
+    H.room = room;
+    var meta = room.meta, ps = room.players||{}, lv = game.levels[meta.lid]||{};
+    var list = Object.keys(ps).map(function(k){ var p=ps[k]; return {id:k, name:p.name, racer:p.racer, p:p.p, wpm:p.wpm, done:p.done, acc:p.acc}; })
+      .sort(function(a,b){ return a.name.localeCompare(b.name); });
+    track.set(list);
+    var running = meta.state==="run" && DB.now() >= meta.startAt;
+    list.forEach(function(p){ track.move(p.id, p.p, running && !p.done); track.wpm(p.id, p.wpm); });
+    var fin = list.filter(function(p){ return p.done; }).sort(function(a,b){ return a.done-b.done; });
+    fin.forEach(function(p,i){ track.place(p.id, i+1); });
+    if(meta.state==="lobby"){
+      $("#hCtl").innerHTML = '<div class="row"><div class="grow"><b style="font-size:1.2rem">'+esc(lv.name)+'</b> · <span id="hCount">'+list.length+'</span> racer'+(list.length===1?"":"s")+' on the line</div>'+
+        '<button class="primary big" type="button" id="hStart"'+(list.length?"":" disabled")+'>Start the race</button><button type="button" id="hClose">Close</button></div>'+
+        '<div class="chips">'+list.map(function(p){ return '<span class="chip">'+racerSVG(p.racer)+esc(p.name)+' <button type="button" class="x" data-kick="'+esc(p.id)+'" title="Remove from this race">×</button></span>'; }).join("")+'</div>';
+      $("#hStart") && $("#hStart").addEventListener("click", function(){
+        var startAt = DB.now() + 5000;
+        DB.update("rooms/"+code+"/"+H.rid+"/meta", {state:"run", startAt:startAt}).then(function(){ return DB.update("live/"+code, {state:"run", hb:DB.now()}); });
+      });
+      $("#hClose").addEventListener("click", function(){ closeLobby(true); });
+      $$("[data-kick]").forEach(function(b){ b.addEventListener("click", function(){ DB.remove("rooms/"+code+"/"+H.rid+"/players/"+b.dataset.kick); }); });
+      return;
+    }
+    if(meta.state==="run"){
+      if(!H.timer){
+        H.timer = setInterval(function(){
+          if(!H.room || !H.room.meta || H.room.meta.state!=="run"){ clearInterval(H.timer); H.timer=null; return; }
+          var m = H.room.meta, left = (m.startAt - DB.now())/1000, el = $("#hClock");
+          if(el) el.textContent = left>0 ? "Starts in "+Math.ceil(left) : fmtSecs(DB.now()-m.startAt)+" / "+fmtSecs(m.limit*1000);
+          var P = H.room.players||{}, ks = Object.keys(P), allDone = ks.length && ks.every(function(k){ return P[k].done; });
+          if(left<=0 && (allDone || DB.now()-m.startAt > m.limit*1000 + 1500)) endRace();
+          if(left > 0) running || track.stopAll();
+        }, 250);
+        TIMERS.push(H.timer);
+      }
+      $("#hCtl").innerHTML = '<div class="row"><div class="grow"><b style="font-size:1.2rem">'+esc(lv.name)+'</b> · '+fin.length+' of '+list.length+' finished</div><div class="timer" id="hClock"></div><button type="button" id="hEnd">End race now</button></div>';
+      $("#hEnd").addEventListener("click", endRace);
+      return;
+    }
+    if(meta.state==="done"){
+      track.stopAll();
+      $("#hCtl").innerHTML = '<div class="row"><div class="grow"><b style="font-size:1.2rem">Race over</b></div>'+
+        '<button class="primary big" type="button" id="hAgain">Race again</button>'+
+        '<select id="hLvl2" style="width:auto">'+levels.map(function(l){ return '<option value="'+esc(l.id)+'">'+esc(l.name)+'</option>'; }).join("")+'</select>'+
+        '<button type="button" id="hClose2">Close the race</button></div><p class="hint">Race again opens a new starting line; students on the race page join it automatically.</p>';
+      $("#hLvl2").value = meta.lid;
+      $("#hAgain").addEventListener("click", function(){ openLobby($("#hLvl2").value); });
+      $("#hClose2").addEventListener("click", function(){ closeLobby(true); });
+      var field = fin.map(function(p){ return {name:p.name, racer:p.racer, wpm:p.wpm, acc:p.acc, ms:p.done}; });
+      var dnf = list.filter(function(p){ return !p.done; });
+      var top = field.slice(0,3);
+      $("#hRes").innerHTML = '<div class="panel"><div class="podium">'+[1,0,2].map(function(i){ var f = top[i]; if(!f) return '';
+          return '<div class="pod p'+(i+1)+'">'+racerSVG(f.racer)+'<div class="nm">'+esc(f.name)+'</div><div class="sp">'+Math.round(f.wpm)+' WPM</div><div class="blk">'+(i+1)+'</div></div>'; }).join("")+'</div>'+
+        '<div class="tablewrap"><table class="t"><thead><tr><th>Place</th><th></th><th>Racer</th><th>WPM</th><th>Accuracy</th><th>Time</th></tr></thead><tbody>'+
+        field.map(function(f,i){ return '<tr><td>'+(i<3?'<span class="medal m'+(i+1)+'">'+(i+1)+'</span>':ordinal(i+1))+'</td><td>'+racerSVG(f.racer)+'</td><td><b>'+esc(f.name)+'</b></td><td class="num">'+Math.round(f.wpm)+'</td><td>'+(f.acc||"")+'%</td><td>'+fmtSecs(f.ms)+'</td></tr>'; }).join("")+
+        dnf.map(function(f){ return '<tr><td class="muted">–</td><td>'+racerSVG(f.racer)+'</td><td>'+esc(f.name)+'</td><td class="num">'+Math.round(f.wpm||0)+'</td><td></td><td class="muted small">didn’t finish ('+Math.round((f.p||0)*100)+'%)</td></tr>'; }).join("")+
+        '</tbody></table></div></div>';
+      if(!H.confettiFor || H.confettiFor!==H.rid){ H.confettiFor = H.rid; if(field.length) confetti(); }
+    }
+  }
+  function endRace(){
+    if(!H.rid || H.ended===H.rid) return; H.ended = H.rid;
+    DB.update("rooms/"+code+"/"+H.rid+"/meta", {state:"done"}).then(function(){ return DB.update("live/"+code, {state:"done", hb:DB.now()}); });
+  }
+  /* reuse an open lobby if the teacher reloaded this page */
+  DB.get("live/"+code).then(function(L){
+    if(liveFresh(L) && L.rid){ H.rid = L.rid; H.lid = L.lid; H.unsub = DB.on("rooms/"+code+"/"+L.rid, onRoom); SUBS.push(H.unsub); }
+    else ctlPick();
+  });
+}
+
+/* ---------- router ---------- */
+function route(){
+  teardown(); HUB = {}; window.scrollTo(0,0);
+  var h = location.hash.replace(/^#\/?/, "").split("/"), a = h[0]||"";
+  var code = (h[1]||"").toUpperCase();
+  if(a==="join") return viewHome(code);
+  if(a==="g" && code) return viewHub(code, h[2]);
+  if(a==="race" && code && h[2]) return viewRace(code, h[2]);
+  if(a==="live" && code) return viewLive(code);
+  if(a==="teach") return viewTeach();
+  if(a==="edit" && code) return viewEdit(code, h[2]);
+  if(a==="host" && code) return viewHost(code);
+  return viewHome("");
+}
+window.addEventListener("hashchange", route);
+startData().then(function(){
+  if(DB.loadError){
+    $("#modeBar").innerHTML = '<div class="demo-bar"><b>Can’t reach the race server.</b> Your school’s web filter may be blocking it, or the Wi-Fi is down. Races on this page won’t be saved. Try again in a minute, or tell your teacher.</div>';
+  } else if(DB.mode==="demo"){
+    $("#modeBar").innerHTML = '<div class="demo-bar"><b>Demo mode.</b> Everything stays in this browser, so you can try it out. Open a second tab to race yourself. <button type="button" class="x" id="demoReset">Clear demo data</button></div>';
+    $("#demoReset").addEventListener("click", function(){ DB.reset(); sessionStorage.clear(); location.hash = "#/"; location.reload(); });
+  }
+  route();
+});
+
+</script>
+
+<!-- Anonymous page-view count (GoatCounter): no cookies, no personal data, no form or file contents. A visit through the school's Securly filter (?scrlybrkr in the address) is recorded as ?sd = school device; nothing else about the visitor is sent. -->
+<script>window.goatcounter={path:function(p){try{var u=new URL(p,location.origin);var sd=u.searchParams.has('scrlybrkr');u.searchParams.delete('scrlybrkr');u.searchParams.delete('sd');var q=u.searchParams.toString();if(sd)q=q?q+'&sd':'sd';return u.pathname+(q?'?'+q:'');}catch(e){return p;}}};</script>
+<script data-goatcounter="https://rjedtech.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
